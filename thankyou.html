@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Sent — Neil Atkinson Counselling</title>
+  <meta name="description" content="Thank you for getting in touch. I will be in touch within one working day to arrange your free first conversation.">
+  <meta name="robots" content="noindex, nofollow">  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/favicon-180.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#5c4a3a">
+  <link rel="stylesheet" href="css/styles.min.css">
+
+  <style>
+    .thankyou-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 2rem 4rem;
+      text-align: center;
+    }
+
+    .thankyou-card {
+      max-width: 520px;
+      width: 100%;
+      animation: fadeUp 0.8s 0.2s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Photo */
+    .thankyou-photo-wrap {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 1.6rem;
+      border: 3px solid rgba(201,185,154,0.4);
+      box-shadow: 0 8px 32px rgba(92,74,58,0.14);
+      background: var(--colour-warm-off);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+    .thankyou-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Tick */
+    .thankyou-tick {
+      width: 48px;
+      height: 48px;
+      background: rgba(143,169,140,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.4rem;
+    }
+    .thankyou-tick svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .thankyou-eyebrow {
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--colour-taupe);
+      margin-bottom: 0.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+    }
+    .thankyou-eyebrow::before,
+    .thankyou-eyebrow::after {
+      content: '';
+      display: block;
+      width: 1.5rem;
+      height: 1px;
+      background: var(--colour-sand);
+    }
+
+    .thankyou-heading {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      color: var(--colour-brown);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .thankyou-heading em {
+      font-style: italic;
+      color: var(--colour-taupe);
+    }
+
+    .thankyou-message {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--colour-subtext);
+      line-height: 1.85;
+      margin-bottom: 2rem;
+    }
+
+    .thankyou-name {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--colour-brown);
+    }
+
+    .thankyou-divider {
+      width: 40px;
+      height: 1px;
+      background: var(--colour-sand);
+      margin: 1.6rem auto;
+    }
+
+    .thankyou-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+      .thankyou-page { padding: 5rem 1.5rem 3rem; }
+    }
+  </style>
+  <link rel="canonical" href="https://www.neilatkinsoncounselling.co.uk/thankyou">
+</head>
+<body>
+
+            <header role="banner">
+    <nav class="nav" aria-label="Main navigation">
+
+      <a href="/" class="nav__logo" aria-label="Neil Atkinson Counselling — home">
+        <img src="img/logo.webp" alt="Neil Atkinson Counselling" class="nav__logo-img" width="622" height="457" fetchpriority="high">
+        <img src="img/neil-atkinson.webp" alt="Neil Atkinson" class="nav__portrait" width="36" height="36" loading="lazy">
+      </a>
+
+            <span class="nav__sidebar-name">Neil Atkinson</span>
+      <span class="nav__sidebar-role">Integrative Counsellor<br>County Durham &amp; online</span>
+      <ul class="nav__links" role="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="what-i-help-with/">What I help with</a></li>
+        <li><a href="how-i-work/">How I work</a></li>
+        <li><a href="about.html">About Neil</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li><span class="nav__divider" aria-hidden="true"></span></li>
+        <li><a href="guides/">Guides</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="crisis.html">Crisis Support</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="index.html#booking" class="nav__cta">Book a Session</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+             stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <line x1="2" y1="5.5"  x2="20" y2="5.5"/>
+          <line x1="2" y1="11"   x2="20" y2="11"/>
+          <line x1="2" y1="16.5" x2="20" y2="16.5"/>
+        </svg>
+      </button>
+
+    </nav>
+  </header>
+
+
+
+  <main id="main-content">
+    <div class="thankyou-page">
+      <div class="thankyou-card">
+
+        <!-- Photo or emoji fallback, shown when counsellor is known -->
+        <div class="thankyou-photo-wrap" id="thankyou-photo" style="display:none;"></div>
+
+        <!-- Generic tick shown when no counsellor known -->
+        <div class="thankyou-tick" id="thankyou-tick">
+          <svg viewBox="0 0 22 22" fill="none" stroke="#8fa98c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 11 9 16 18 6"/>
+          </svg>
+        </div>
+
+        <p class="thankyou-eyebrow">Message sent</p>
+
+        <h1 class="thankyou-heading" id="thankyou-heading">
+          Thank you for<br>reaching <em>out</em>
+        </h1>
+
+        <p class="thankyou-message" id="thankyou-message">
+          Your message is on its way. You'll hear back within one working day.
+        </p>
+
+        <div class="thankyou-divider"></div>
+
+        <div class="thankyou-actions">
+          <a href="index.html" class="btn btn--outline">Back to home</a>
+          <a href="about.html" class="btn btn--primary" id="thankyou-team-link">About Neil</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div>
+        <a href="/" aria-label="Neil Atkinson Counselling — home">
+          <img src="img/logo.webp" alt="Neil Atkinson Counselling" width="160" height="auto" loading="lazy" style="width:160px;height:auto;margin-bottom:0.8rem;display:block">
+        </a>
+        <p class="footer__tagline">Integrative counselling with Neil Atkinson, MNCPS (Acc.). Face to face, online, telephone and walk and talk across the North East of England.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="What I help with">
+        <p class="footer__col-title">What I help with</p>
+        <ul role="list">
+          <li><a href="what-i-help-with/anxiety-stress.html">Anxiety and Stress</a></li>
+          <li><a href="what-i-help-with/depression.html">Depression</a></li>
+          <li><a href="what-i-help-with/grief-loss.html">Grief and Loss</a></li>
+          <li><a href="what-i-help-with/trauma.html">Trauma</a></li>
+          <li><a href="what-i-help-with/mens-mental-health.html">Men&rsquo;s Mental Health</a></li>
+          <li><a href="what-i-help-with/neurodivergent-support.html">Neurodivergent Support</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="How I work">
+        <p class="footer__col-title">How I work</p>
+        <ul role="list">
+          <li><a href="how-i-work/face-to-face.html">Face to Face Counselling</a></li>
+          <li><a href="how-i-work/online-counselling.html">Online Counselling</a></li>
+          <li><a href="how-i-work/telephone.html">Telephone Counselling</a></li>
+          <li><a href="how-i-work/walk-and-talk.html">Walk and Talk Therapy</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Information">
+        <p class="footer__col-title">Information</p>
+        <ul role="list">
+          <li><a href="about.html">About Neil</a></li>
+          <li><a href="fees.html">Fees</a></li>
+          <li><a href="index.html#approach">My approach</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="guides/">Guides</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="crisis.html">Crisis Support</a></li>
+          <li><a href="privacy.html">Privacy &amp; Confidentiality</a></li>
+          <li><a href="privacy.html#cookies">Cookie Policy</a></li>
+          <li><a href="index.html#booking">Get in touch</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <p class="footer__col-title">Contact</p>
+        <p class="footer__contact-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <a href="mailto:neil@neilatkinsoncounselling.co.uk">neil@neilatkinsoncounselling.co.uk</a>
+        </p>
+        <p class="footer__contact-item">Face to face in Consett, County Durham &middot; Online across the North East</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy"><small>&copy; <span id="current-year">2026</span> Neil Atkinson Counselling. All rights reserved.</small></p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://ncps.com/about-us/code-of-ethics/" target="_blank" rel="noopener noreferrer">NCPS Ethical Framework</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      // Read counsellor slug from URL query string: ?counsellor=neil-atkinson
+      const params  = new URLSearchParams(window.location.search);
+      const slug    = params.get('counsellor');
+      const person  = slug && typeof TEAM !== 'undefined'
+                        ? TEAM.find(p => p.slug === slug)
+                        : null;
+
+      const photoWrap = document.getElementById('thankyou-photo');
+      const tick      = document.getElementById('thankyou-tick');
+      const heading   = document.getElementById('thankyou-heading');
+      const message   = document.getElementById('thankyou-message');
+      const teamLink  = document.getElementById('thankyou-team-link');
+
+      if (person) {
+        // Show photo / emoji
+        if (person.photo) {
+          photoWrap.innerHTML = `<img src="img/neil-atkinson.webp" alt="Neil Atkinson" style="object-position:center 5%" loading="lazy">`;
+        } else {
+          photoWrap.innerHTML = `<span aria-hidden="true">${person.emoji || '🌿'}</span>`;
+        }
+        photoWrap.style.display = 'flex';
+        tick.style.display = 'none';
+
+        // Personalise heading and message
+        const firstName = person.name.split(' ')[0];
+        heading.innerHTML = `Thank you for<br>reaching <em>out</em>`;
+        message.innerHTML = `Your message is on its way to <strong class="thankyou-name">${firstName}</strong>. You\u2019ll hear back within one working day.`;
+
+        // Link back to their profile
+        teamLink.href        = `about.html`;
+        teamLink.textContent = `Back to ${firstName}\u2019s profile`;
+      }
+
+      // Year
+      const yr = document.getElementById('current-year');
+      if (yr) yr.textContent = new Date().getFullYear();
+    })();
+  </script>
+
+  <script src="js/accessibility.js"></script>
+</body>
+</html>

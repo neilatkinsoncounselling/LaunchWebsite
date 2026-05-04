@@ -1,0 +1,69 @@
+# Netlify _redirects — Neil Atkinson Counselling
+# Legacy and renamed URL redirects only.
+# Clean URL → .html rewrites are handled in netlify.toml.
+
+# ── Old what-we-work-with → what-i-help-with ─────────────────────────────
+/what-we-work-with                                  /what-i-help-with/                301
+/what-we-work-with/                                 /what-i-help-with/                301
+/what-we-work-with/anxiety-stress                   /what-i-help-with/anxiety-stress  301
+/what-we-work-with/anxiety-stress.html              /what-i-help-with/anxiety-stress  301
+/what-we-work-with/depression                       /what-i-help-with/depression      301
+/what-we-work-with/depression.html                  /what-i-help-with/depression      301
+/what-we-work-with/grief-loss                       /what-i-help-with/grief-loss      301
+/what-we-work-with/grief-loss.html                  /what-i-help-with/grief-loss      301
+/what-we-work-with/trauma                           /what-i-help-with/trauma          301
+/what-we-work-with/trauma.html                      /what-i-help-with/trauma          301
+/what-we-work-with/mens-mental-health               /what-i-help-with/mens-mental-health  301
+/what-we-work-with/mens-mental-health.html          /what-i-help-with/mens-mental-health  301
+/what-we-work-with/neurodivergent-support           /what-i-help-with/neurodivergent-support  301
+/what-we-work-with/neurodivergent-support.html      /what-i-help-with/neurodivergent-support  301
+
+# ── Old how-we-work → how-i-work ─────────────────────────────────────────
+/how-we-work                                        /how-i-work/                      301
+/how-we-work/                                       /how-i-work/                      301
+/how-we-work/face-to-face                           /how-i-work/face-to-face          301
+/how-we-work/face-to-face.html                      /how-i-work/face-to-face          301
+/how-we-work/online-counselling                     /how-i-work/online-counselling    301
+/how-we-work/online-counselling.html                /how-i-work/online-counselling    301
+/how-we-work/telephone                              /how-i-work/telephone             301
+/how-we-work/telephone.html                         /how-i-work/telephone             301
+/how-we-work/walk-and-talk                          /how-i-work/walk-and-talk         301
+/how-we-work/walk-and-talk.html                     /how-i-work/walk-and-talk         301
+
+# ── Legacy /services/ → what-i-help-with ─────────────────────────────────
+/services                                           /what-i-help-with/                301
+/services/                                          /what-i-help-with/                301
+/services/anxiety-stress                            /what-i-help-with/anxiety-stress  301
+/services/anxiety-stress.html                       /what-i-help-with/anxiety-stress  301
+/services/depression                                /what-i-help-with/depression      301
+/services/depression.html                           /what-i-help-with/depression      301
+/services/grief-loss                                /what-i-help-with/grief-loss      301
+/services/grief-loss.html                           /what-i-help-with/grief-loss      301
+/services/trauma                                    /what-i-help-with/trauma          301
+/services/trauma.html                               /what-i-help-with/trauma          301
+/services/mens-mental-health                        /what-i-help-with/mens-mental-health  301
+/services/mens-mental-health.html                   /what-i-help-with/mens-mental-health  301
+/services/neurodivergent-support                    /what-i-help-with/neurodivergent-support  301
+/services/neurodivergent-support.html               /what-i-help-with/neurodivergent-support  301
+/services/individual-therapy                        /how-i-work/face-to-face          301
+/services/individual-therapy.html                   /how-i-work/face-to-face          301
+/services/online-counselling                        /how-i-work/online-counselling    301
+/services/online-counselling.html                   /how-i-work/online-counselling    301
+
+# ── Team → about ─────────────────────────────────────────────────────────
+/team                                               /about                            301
+/team/                                              /about                            301
+/team/*                                             /about                            301
+
+# ── Old .html root URLs ───────────────────────────────────────────────────
+# ── Fee page ──────────────────────────────────────────────────────────────
+# Handled by netlify.toml clean URL rewrite
+/about.html                                         /about                            301
+/faqs.html                                          /faqs                             301
+/crisis.html                                        /crisis                           301
+/privacy.html                                       /privacy                          301
+/thankyou.html                                      /thankyou                         301
+
+# ── Legacy blog ───────────────────────────────────────────────────────────
+/blog/what-is-eft                                   /blog/                            301
+/blog/what-is-eft.html                              /blog/                            301

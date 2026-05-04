@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs | Neil Atkinson Counselling | North East England</title>
+  <meta name="description" content="Answers to common questions about counselling at Neil Atkinson Counselling — sessions, confidentiality, getting started, and more.">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/favicon-180.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    /* ── FAQs hero ── */
+    .faqs-hero {
+      min-height: 52vh;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; position: relative; overflow: hidden;
+      padding: 10rem 2rem 5rem;
+    }
+    .faqs-hero__bg {
+      position: absolute; inset: 0;
+      background-image: url('img/hero-bg.webp');
+      background-size: cover; background-position: center 40%;
+      transform: scale(1.04);
+      animation: faqs-zoom 18s ease-out forwards;
+    }
+    @keyframes faqs-zoom { from { transform: scale(1.04); } to { transform: scale(1.0); } }
+    .faqs-hero__overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(10,8,4,0.6) 100%),
+                  radial-gradient(ellipse at center, rgba(10,8,4,0.55) 0%, rgba(10,8,4,0.3) 40%, transparent 70%);
+    }
+    .faqs-hero__inner { position: relative; z-index: 2; max-width: 680px; margin: 0 auto; }
+    .faqs-hero__eyebrow {
+      display: flex; align-items: center; justify-content: center; gap: 0.7rem;
+      font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: rgba(255,255,255,0.85); margin-bottom: 1.2rem;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+      opacity: 0; animation: faq-fade 0.8s 0.3s ease forwards;
+    }
+    .faqs-hero__eyebrow::before, .faqs-hero__eyebrow::after {
+      content: ''; display: block; width: 2rem; height: 1px;
+      background: rgba(201,185,154,0.5);
+    }
+    .faqs-hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 300; color: #fff;
+      line-height: 1.1; margin-bottom: 1rem;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.75), 0 4px 32px rgba(0,0,0,0.55);
+      opacity: 0; animation: faq-fade 0.9s 0.6s ease forwards;
+    }
+    .faqs-hero__title em { font-style: italic; color: #f5e8cc; }
+    .faqs-hero__desc {
+      font-size: 1rem; font-weight: 300;
+      color: rgba(255,255,255,0.88);
+      text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+      max-width: 500px; margin: 0 auto; line-height: 1.8;
+      opacity: 0; animation: faq-fade 0.9s 1s ease forwards;
+    }
+    @keyframes faq-fade {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Search ── */
+    .faqs-search {
+      max-width: 560px; margin: -1.8rem auto 0;
+      position: relative; z-index: 3; padding: 0 2rem;
+    }
+    .faqs-search__input {
+      width: 100%; padding: 1rem 1.2rem 1rem 3rem;
+      font-family: var(--font-body); font-size: 0.9rem; font-weight: 300;
+      background: #fff; border: 1.5px solid rgba(158,136,114,0.25);
+      border-radius: var(--radius-pill);
+      box-shadow: 0 8px 32px rgba(92,74,58,0.12);
+      outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .faqs-search__input:focus {
+      border-color: var(--colour-taupe);
+      box-shadow: 0 8px 32px rgba(92,74,58,0.18);
+    }
+    .faqs-search__icon {
+      position: absolute; left: 2.9rem; top: 50%; transform: translateY(-50%);
+      width: 16px; height: 16px; stroke: var(--colour-taupe); pointer-events: none;
+    }
+    .faqs-no-results {
+      text-align: center; padding: 3rem 0;
+      font-size: 0.95rem; font-weight: 300; color: var(--colour-subtext);
+      display: none;
+    }
+
+    /* ── FAQ card grid ── */
+    .faqs-body {
+      max-width: 900px; margin: 0 auto;
+      padding: 3.5rem 2rem 5rem;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;
+      align-items: start;
+    }
+    .faq-card {
+      background: #fff;
+      border: 1px solid rgba(158,136,114,0.18);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .faq-card__band { height: 5px; width: 100%; }
+    .faq-card__head {
+      padding: 0.9rem 1.2rem 0.75rem;
+      display: flex; align-items: center; gap: 0.6rem;
+      border-bottom: 1px solid rgba(158,136,114,0.1);
+    }
+    .faq-card__title {
+      font-family: var(--font-body);
+      font-size: 1rem; font-weight: 500; color: var(--colour-brown);
+      letter-spacing: 0.02em; line-height: 1.2;
+    }
+    .faq-card__count {
+      margin-left: auto; flex-shrink: 0;
+      font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--colour-taupe); background: var(--colour-warm-off);
+      padding: 0.18rem 0.6rem; border-radius: var(--radius-pill);
+    }
+    .faq-list { list-style: none; }
+    .faq-item { border-bottom: 1px solid rgba(158,136,114,0.08); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item__question {
+      width: 100%; background: none; border: none; cursor: pointer;
+      text-align: left; padding: 0.75rem 1.2rem;
+      display: flex; justify-content: space-between; align-items: center; gap: 0.8rem;
+      font-family: var(--font-body); font-size: 0.9rem; font-weight: 400;
+      color: var(--colour-text); line-height: 1.5;
+      transition: color 0.2s;
+    }
+    .faq-item__question:hover { color: var(--colour-taupe); }
+    .faq-item__chevron {
+      flex-shrink: 0; width: 14px; height: 14px;
+      transition: transform 0.3s ease; stroke: var(--colour-taupe);
+    }
+    .faq-item--open .faq-item__chevron { transform: rotate(180deg); }
+    .faq-item__answer {
+      overflow: hidden; max-height: 0;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      font-size: 0.83rem; font-weight: 300;
+      color: var(--colour-subtext); line-height: 1.8; padding: 0 1.2rem;
+    }
+    .faq-item--open .faq-item__answer { max-height: 500px; padding: 0 1.2rem 1.1rem; }
+    .faq-item--hidden { display: none; }
+
+    /* ── CTA ── */
+    .faqs-cta {
+      background: var(--colour-warm-off);
+      border: 1px solid rgba(158,136,114,0.18);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem; text-align: center; margin: 0 2rem 4rem;
+      max-width: 860px; margin-left: auto; margin-right: auto;
+    }
+    .faqs-cta__title {
+      font-family: var(--font-display); font-size: 1.6rem; font-weight: 400;
+      color: var(--colour-brown); margin-bottom: 0.6rem;
+    }
+    .faqs-cta__desc {
+      font-size: 0.9rem; font-weight: 300; color: var(--colour-subtext);
+      margin-bottom: 1.5rem; line-height: 1.7;
+    }
+    .faqs-cta__buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    @media (max-width: 640px) {
+      .faqs-body { grid-template-columns: 1fr; }
+      .faq-card[style*="grid-column"] { max-width: 100% !important; }
+    }
+  </style>
+  <link rel="canonical" href="https://www.neilatkinsoncounselling.co.uk/faqs">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FAQs | Neil Atkinson Counselling">
+  <meta property="og:description" content="Common questions about counselling, what to expect, how to get started, and how Neil Atkinson Counselling works.">
+  <meta property="og:url" content="https://www.neilatkinsoncounselling.co.uk/faqs">
+  <meta property="og:image" content="https://www.neilatkinsoncounselling.co.uk/img/og-image.jpg">
+</head>
+<body>
+
+            <header role="banner">
+    <nav class="nav" aria-label="Main navigation">
+
+      <a href="/" class="nav__logo" aria-label="Neil Atkinson Counselling — home">
+        <img src="img/logo.webp" alt="Neil Atkinson Counselling" class="nav__logo-img" width="622" height="457" fetchpriority="high">
+        <img src="img/neil-atkinson.webp" alt="Neil Atkinson" class="nav__portrait" width="36" height="36" loading="lazy">
+      </a>
+
+            <span class="nav__sidebar-name">Neil Atkinson</span>
+      <span class="nav__sidebar-role">Integrative Counsellor<br>County Durham &amp; online</span>
+      <ul class="nav__links" role="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="what-i-help-with/">What I help with</a></li>
+        <li><a href="how-i-work/">How I work</a></li>
+        <li><a href="about.html">About Neil</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li><span class="nav__divider" aria-hidden="true"></span></li>
+        <li><a href="guides/">Guides</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="crisis.html">Crisis Support</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="index.html#booking" class="nav__cta">Book a Session</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+             stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <line x1="2" y1="5.5"  x2="20" y2="5.5"/>
+          <line x1="2" y1="11"   x2="20" y2="11"/>
+          <line x1="2" y1="16.5" x2="20" y2="16.5"/>
+        </svg>
+      </button>
+
+    </nav>
+  </header>
+
+
+
+  <main id="main-content">
+
+    <section class="faqs-hero">
+      <div class="faqs-hero__bg" aria-hidden="true"></div>
+      <div class="faqs-hero__overlay" aria-hidden="true"></div>
+      <div class="faqs-hero__inner">
+        <p class="faqs-hero__eyebrow">Common Questions</p>
+        <h1 class="faqs-hero__title">Frequently asked <em>questions</em></h1>
+        <p class="faqs-hero__desc">Everything you might want to know before taking that first step.</p>
+      </div>
+    </section>
+
+    <!-- Search box floats below hero -->
+    <div class="faqs-search">
+      <svg class="faqs-search__icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+      </svg>
+      <input class="faqs-search__input" type="search" id="faq-search"
+             placeholder="Search questions…" aria-label="Search FAQs">
+    </div>
+
+    <p class="faqs-no-results" id="faq-no-results">No questions match your search.</p>
+
+    <div class="faqs-body" id="faqs-body">
+      <div class="faq-card" data-category="Getting Started">
+        <div class="faq-card__band" aria-hidden="true"></div>
+        <div class="faq-card__head">
+          <h2 class="faq-card__title">Getting Started</h2>
+          <span class="faq-card__count">5</span>
+        </div>
+        <ul class="faq-list">
+          <li class="faq-item" data-q="i've never had counselling before. what should i expect?" data-a="mostly, a conversation. your first session is not a formal assessment and there's nothing you need to prepare. i'll ask what's brought you here and we'll talk about what you're hoping to get from it. you don't need to have the words ready or anything figured out. most people find it less daunting than they expected.">
+            <button class="faq-item__question" aria-expanded="false">I've never had counselling before. What should I expect?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">Mostly, a conversation. Your first session is not a formal assessment and there's nothing you need to prepare. I'll ask what's brought you here and we'll talk about what you're hoping to get from it. You don't need to have the words ready or anything figured out. Most people find it less daunting than they expected.</div>
+          </li>
+          <li class="faq-item" data-q="i'm not sure counselling is right for me. does that matter?" data-a="not at all. uncertainty is one of the most common reasons people get in touch. you don't need to be convinced it will work before you try it. the free first session is exactly for this. it gives you a chance to ask questions, get a feel for how i work, and decide whether it feels worth continuing. there's no commitment attached to it.">
+            <button class="faq-item__question" aria-expanded="false">I'm not sure counselling is right for me. Does that matter?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">Not at all. Uncertainty is one of the most common reasons people get in touch. You don't need to be convinced it will work before you try it. The free first session is exactly for this. It gives you a chance to ask questions, get a feel for how I work, and decide whether it feels worth continuing. There's no commitment attached to it.</div>
+          </li>
+          <li class="faq-item" data-q="do i need to know what i want to talk about before i come?" data-a="no. some people arrive with a clear sense of what they want to work on. others just know that something isn't right and can't put their finger on exactly what. both are fine. part of what counselling does is help you make sense of what you're carrying, so you don't need to have that worked out in advance.">
+            <button class="faq-item__question" aria-expanded="false">Do I need to know what I want to talk about before I come?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">No. Some people arrive with a clear sense of what they want to work on. Others just know that something isn't right and can't put their finger on exactly what. Both are fine. Part of what counselling does is help you make sense of what you're carrying, so you don't need to have that worked out in advance.</div>
+          </li>
+          <li class="faq-item" data-q="what is the free first session?" data-a="it's a no-obligation conversation, usually around 50 minutes, where you can talk about what's brought you here and what you're hoping to get from counselling. it gives you a chance to see how i work and whether it feels like a good fit. there's no pressure to continue and no charge if you decide it's not for you.">
+            <button class="faq-item__question" aria-expanded="false">What is the free first session?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">It's a no-obligation conversation, usually around 50 minutes, where you can talk about what's brought you here and what you're hoping to get from counselling. It gives you a chance to see how I work and whether it feels like a good fit. There's no pressure to continue and no charge if you decide it's not for you.</div>
+          </li>
+          <li class="faq-item" data-q="how long does counselling take?" data-a="there's no fixed answer. it depends on what you're working through and what feels useful. some people come for six or eight sessions and find that's enough. others come for much longer. we'll check in as we go, and you decide when you're ready to stop. there's no pressure to keep coming if it stops feeling useful, and no pressure to leave before you're ready.">
+            <button class="faq-item__question" aria-expanded="false">How long does counselling take?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">There's no fixed answer. It depends on what you're working through and what feels useful. Some people come for six or eight sessions and find that's enough. Others come for much longer. We'll check in as we go, and you decide when you're ready to stop. There's no pressure to keep coming if it stops feeling useful, and no pressure to leave before you're ready.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="faq-card" data-category="Sessions">
+        <div class="faq-card__band" aria-hidden="true"></div>
+        <div class="faq-card__head">
+          <h2 class="faq-card__title">Sessions</h2>
+          <span class="faq-card__count">6</span>
+        </div>
+        <ul class="faq-list">
+          <li class="faq-item" data-q="how long is each session?" data-a="50 minutes. that's the standard counselling hour. it's enough time to get into something meaningful without feeling like you've been put through the wringer.">
+            <button class="faq-item__question" aria-expanded="false">How long is each session?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">50 minutes. That's the standard counselling hour. It's enough time to get into something meaningful without feeling like you've been put through the wringer.</div>
+          </li>
+          <li class="faq-item" data-q="what happens in a session?" data-a="we talk. that's the honest answer. there's no set format and i'm not going to hand you a worksheet or ask you to do breathing exercises unless that's something we've agreed might help. you bring what's on your mind. i listen, ask questions, reflect things back. sometimes a session feels like a lot happened. sometimes it feels quieter. both are useful.">
+            <button class="faq-item__question" aria-expanded="false">What happens in a session?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">We talk. That's the honest answer. There's no set format and I'm not going to hand you a worksheet or ask you to do breathing exercises unless that's something we've agreed might help. You bring what's on your mind. I listen, ask questions, reflect things back. Sometimes a session feels like a lot happened. Sometimes it feels quieter. Both are useful.</div>
+          </li>
+          <li class="faq-item" data-q="what if i start crying or feel overwhelmed?" data-a="that's completely fine. it happens a lot, and it's not something you need to apologise for or hold back. sessions are one of the few places where you don't have to manage how you come across. if something hits hard, we can slow down. you're in control of the pace.">
+            <button class="faq-item__question" aria-expanded="false">What if I start crying or feel overwhelmed?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">That's completely fine. It happens a lot, and it's not something you need to apologise for or hold back. Sessions are one of the few places where you don't have to manage how you come across. If something hits hard, we can slow down. You're in control of the pace.</div>
+          </li>
+          <li class="faq-item" data-q="how often should i come?" data-a="weekly is most common, especially at the start. it helps build some momentum and means you're not losing the thread between sessions. some people move to fortnightly once things settle. we can work out what suits you.">
+            <button class="faq-item__question" aria-expanded="false">How often should I come?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">Weekly is most common, especially at the start. It helps build some momentum and means you're not losing the thread between sessions. Some people move to fortnightly once things settle. We can work out what suits you.</div>
+          </li>
+          <li class="faq-item" data-q="can i have sessions online or by phone?" data-a="yes. i offer face-to-face sessions in shotley bridge and online sessions via video. i also offer telephone and walk and talk sessions. online works well for most people and means you can access support without travelling. you can mix formats too if your week doesn't always allow you to come in person.">
+            <button class="faq-item__question" aria-expanded="false">Can I have sessions online or by phone?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">Yes. I offer face-to-face sessions in Consett, County Durham and online sessions via video. I also offer telephone and walk and talk sessions. Online works well for most people and means you can access support without travelling. You can mix formats too if your week doesn't always allow you to come in person.</div>
+          </li>
+          <li class="faq-item" data-q="what if i need to cancel?" data-a="life gets in the way sometimes. i ask for as much notice as possible, ideally 48 hours. late cancellations and missed sessions may be charged. i'll be clear about this before we start so there are no surprises.">
+            <button class="faq-item__question" aria-expanded="false">What if I need to cancel?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">Life gets in the way sometimes. I ask for as much notice as possible, ideally 48 hours. Late cancellations and missed sessions may be charged. I'll be clear about this before we start so there are no surprises.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="faq-card" data-category="About Neil">
+        <div class="faq-card__band" aria-hidden="true"></div>
+        <div class="faq-card__head">
+          <h2 class="faq-card__title">About Neil</h2>
+          <span class="faq-card__count">4</span>
+        </div>
+        <ul class="faq-list">
+          <li class="faq-item" data-q="are you qualified?" data-a="i am a qualified integrative counsellor and an accredited registrant of the ncps (mncps acc.). i hold a level 5 diploma in integrative therapeutic counselling, work under regular clinical supervision, and practise within the ncps ethical framework.">
+            <button class="faq-item__question" aria-expanded="false">Are you qualified?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">I am a qualified integrative counsellor and an Accredited Registrant of the NCPS (MNCPS Acc.). I hold a Level 5 Diploma in Integrative Therapeutic Counselling, work under regular clinical supervision, and practise within the NCPS ethical framework.</div>
+          </li>
+          <li class="faq-item" data-q="what does integrative mean?" data-a="it means i've trained across a range of counselling approaches rather than sticking to one fixed model. person-centred, psychodynamic, cbt-influenced, attachment-based. i draw on whatever seems most useful for the person in front of me. in practice, it means i adapt to you rather than trying to fit you into a particular way of working.">
+            <button class="faq-item__question" aria-expanded="false">What does integrative mean?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">It means I've trained across a range of counselling approaches rather than sticking to one fixed model. Person-centred, psychodynamic, CBT-influenced, attachment-based. I draw on whatever seems most useful for the person in front of me. In practice, it means I adapt to you rather than trying to fit you into a particular way of working.</div>
+          </li>
+          <li class="faq-item" data-q="do you work with a supervisor?" data-a="yes, regularly. clinical supervision is a professional requirement, not optional. it means i'm discussing my work with an experienced supervisor to make sure i'm supporting you as well as i can. your identity is never shared. only anonymised details are discussed.">
+            <button class="faq-item__question" aria-expanded="false">Do you work with a supervisor?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">Yes, regularly. Clinical supervision is a professional requirement, not optional. It means I'm discussing my work with an experienced supervisor to make sure I'm supporting you as well as I can. Your identity is never shared. Only anonymised details are discussed.</div>
+          </li>
+          <li class="faq-item" data-q="why did you become a counsellor?" data-a="i came to counselling through real life rather than a textbook. after losing a colleague to suicide, i found myself drawn toward work that gives people somewhere honest to go with what they're carrying. that's the short version. there's more on the about page if you want it.">
+            <button class="faq-item__question" aria-expanded="false">Why did you become a counsellor?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">I came to counselling through real life rather than a textbook. After losing a colleague to suicide, I found myself drawn toward work that gives people somewhere honest to go with what they're carrying. That's the short version. There's more on the About page if you want it.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="faq-card" data-category="Cost and Cancellations">
+        <div class="faq-card__band" aria-hidden="true"></div>
+        <div class="faq-card__head">
+          <h2 class="faq-card__title">Cost and Cancellations</h2>
+          <span class="faq-card__count">4</span>
+        </div>
+        <ul class="faq-list">
+          <li class="faq-item" data-q="how much does a session cost?" data-a="my current session fee is listed on the about page and the booking form. the free first session has no charge attached.">
+            <button class="faq-item__question" aria-expanded="false">How much does a session cost?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">My current session fee is listed on the About page and the booking form. The free first session has no charge attached.</div>
+          </li>
+          <li class="faq-item" data-q="do you offer reduced rates?" data-a="yes, in some circumstances. if cost is a barrier, it's worth asking. the worst i can say is that i can't accommodate it right now.">
+            <button class="faq-item__question" aria-expanded="false">Do you offer reduced rates?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">Yes, in some circumstances. If cost is a barrier, it's worth asking. The worst I can say is that I can't accommodate it right now.</div>
+          </li>
+          <li class="faq-item" data-q="can i use private health insurance?" data-a="some policies cover counselling, but it varies a lot by insurer and policy. check with your provider first. i can tell you what information they'd likely need from me.">
+            <button class="faq-item__question" aria-expanded="false">Can I use private health insurance?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">Some policies cover counselling, but it varies a lot by insurer and policy. Check with your provider first. I can tell you what information they'd likely need from me.</div>
+          </li>
+          <li class="faq-item" data-q="do i have to commit to a set number of sessions?" data-a="no. there's no minimum and no contract. some people find it helpful to book a block for structure. others prefer to go week by week. either works.">
+            <button class="faq-item__question" aria-expanded="false">Do I have to commit to a set number of sessions?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">No. There's no minimum and no contract. Some people find it helpful to book a block for structure. Others prefer to go week by week. Either works.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="faq-card" data-category="Confidentiality">
+        <div class="faq-card__band" aria-hidden="true"></div>
+        <div class="faq-card__head">
+          <h2 class="faq-card__title">Confidentiality</h2>
+          <span class="faq-card__count">3</span>
+        </div>
+        <ul class="faq-list">
+          <li class="faq-item" data-q="is what i say kept private?" data-a="yes. everything you share in our sessions is confidential. there are two exceptions: if i believed there was a serious risk of harm to you or someone else, or if i were legally required to disclose something. in either case, i would talk to you about it first wherever possible. i'll explain this properly at our first session.">
+            <button class="faq-item__question" aria-expanded="false">Is what I say kept private?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">Yes. Everything you share in our sessions is confidential. There are two exceptions: if I believed there was a serious risk of harm to you or someone else, or if I were legally required to disclose something. In either case, I would talk to you about it first wherever possible. I'll explain this properly at our first session.</div>
+          </li>
+          <li class="faq-item" data-q="will my gp or employer find out?" data-a="no. i don't contact your gp, employer, or anyone else. what you share stays between us, subject only to the exceptions above.">
+            <button class="faq-item__question" aria-expanded="false">Will my GP or employer find out?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">No. I don't contact your GP, employer, or anyone else. What you share stays between us, subject only to the exceptions above.</div>
+          </li>
+          <li class="faq-item" data-q="do you take notes?" data-a="i keep brief notes to help me track what we're working on between sessions. these are stored securely and aren't shared with anyone. you can ask me about how i handle notes at any time.">
+            <button class="faq-item__question" aria-expanded="false">Do you take notes?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">I keep brief notes to help me track what we're working on between sessions. These are stored securely and aren't shared with anyone. You can ask me about how I handle notes at any time.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="faq-card" data-category="Specific Situations">
+        <div class="faq-card__band" aria-hidden="true"></div>
+        <div class="faq-card__head">
+          <h2 class="faq-card__title">Specific Situations</h2>
+          <span class="faq-card__count">5</span>
+        </div>
+        <ul class="faq-list">
+          <li class="faq-item" data-q="i'm a man and i've never really talked about my feelings. is this going to feel awkward?" data-a="possibly at first. that's honest. most people feel a bit awkward in the first session regardless of who they are. but you don't have to arrive already knowing how to talk about feelings. that's part of what we work on together. you can show up exactly as you are and go at whatever pace feels manageable.">
+            <button class="faq-item__question" aria-expanded="false">I'm a man and I've never really talked about my feelings. Is this going to feel awkward?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">Possibly at first. That's honest. Most people feel a bit awkward in the first session regardless of who they are. But you don't have to arrive already knowing how to talk about feelings. That's part of what we work on together. You can show up exactly as you are and go at whatever pace feels manageable.</div>
+          </li>
+          <li class="faq-item" data-q="do i need a diagnosis to access support for neurodivergence?" data-a="no. i work with people who are formally diagnosed, currently being assessed, or who self-identify as neurodivergent. what matters is your experience, not a piece of paper.">
+            <button class="faq-item__question" aria-expanded="false">Do I need a diagnosis to access support for neurodivergence?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">No. I work with people who are formally diagnosed, currently being assessed, or who self-identify as neurodivergent. What matters is your experience, not a piece of paper.</div>
+          </li>
+          <li class="faq-item" data-q="can counselling help with work stress or burnout?" data-a="yes. it's one of the most common reasons people come. you don't need a dramatic reason to seek support. feeling worn down or like you can't keep up is enough.">
+            <button class="faq-item__question" aria-expanded="false">Can counselling help with work stress or burnout?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">Yes. It's one of the most common reasons people come. You don't need a dramatic reason to seek support. Feeling worn down or like you can't keep up is enough.</div>
+          </li>
+          <li class="faq-item" data-q="my partner won't come to counselling. can it still help me?" data-a="yes. individual counselling can be really useful for relationship difficulties even without your partner. it gives you space to understand your own patterns, process what you're feeling, and work out what you actually want. you can only change what's yours to change, and that's often more than people expect.">
+            <button class="faq-item__question" aria-expanded="false">My partner won't come to counselling. Can it still help me?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">Yes. Individual counselling can be really useful for relationship difficulties even without your partner. It gives you space to understand your own patterns, process what you're feeling, and work out what you actually want. You can only change what's yours to change, and that's often more than people expect.</div>
+          </li>
+          <li class="faq-item" data-q="what if i'm in crisis right now?" data-a="i'm not a crisis service and i can't offer emergency support. if you're struggling to keep yourself safe, please contact the samaritans on 116 123 (free, 24 hours), call 999, or go to your nearest a&e. my crisis support page has a full list of organisations who can help right now.">
+            <button class="faq-item__question" aria-expanded="false">What if I'm in crisis right now?
+              <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer" role="region">I'm not a crisis service and I can't offer emergency support. If you're struggling to keep yourself safe, please contact the Samaritans on 116 123 (free, 24 hours), call 999, or go to your nearest A&E. My crisis support page has a full list of organisations who can help right now.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="faqs-cta">
+        <p class="faqs-cta__title">Still have questions?</p>
+        <p class="faqs-cta__desc">Get in touch before you commit to anything. Book your first free session and ask me whatever is on your mind.</p>
+        <div class="faqs-cta__buttons">
+          <a href="index.html#booking" class="btn btn--primary" style="background:var(--colour-forest)">Book your first free session</a>
+          <a href="about.html" class="btn btn--outline">About Neil</a>
+        </div>
+      </div>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div>
+        <a href="/" aria-label="Neil Atkinson Counselling — home">
+          <img src="img/logo.webp" alt="Neil Atkinson Counselling" width="160" height="auto" loading="lazy" style="width:160px;height:auto;margin-bottom:0.8rem;display:block">
+        </a>
+        <p class="footer__tagline">Integrative counselling with Neil Atkinson, MNCPS (Acc.). Face to face, online, telephone and walk and talk across the North East of England.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="What I help with">
+        <p class="footer__col-title">What I help with</p>
+        <ul role="list">
+          <li><a href="what-i-help-with/anxiety-stress.html">Anxiety and Stress</a></li>
+          <li><a href="what-i-help-with/depression.html">Depression</a></li>
+          <li><a href="what-i-help-with/grief-loss.html">Grief and Loss</a></li>
+          <li><a href="what-i-help-with/trauma.html">Trauma</a></li>
+          <li><a href="what-i-help-with/mens-mental-health.html">Men&rsquo;s Mental Health</a></li>
+          <li><a href="what-i-help-with/neurodivergent-support.html">Neurodivergent Support</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="How I work">
+        <p class="footer__col-title">How I work</p>
+        <ul role="list">
+          <li><a href="how-i-work/face-to-face.html">Face to Face Counselling</a></li>
+          <li><a href="how-i-work/online-counselling.html">Online Counselling</a></li>
+          <li><a href="how-i-work/telephone.html">Telephone Counselling</a></li>
+          <li><a href="how-i-work/walk-and-talk.html">Walk and Talk Therapy</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Information">
+        <p class="footer__col-title">Information</p>
+        <ul role="list">
+          <li><a href="about.html">About Neil</a></li>
+          <li><a href="fees.html">Fees</a></li>
+          <li><a href="index.html#approach">My approach</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="guides/">Guides</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="crisis.html">Crisis Support</a></li>
+          <li><a href="privacy.html">Privacy &amp; Confidentiality</a></li>
+          <li><a href="privacy.html#cookies">Cookie Policy</a></li>
+          <li><a href="index.html#booking">Get in touch</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <p class="footer__col-title">Contact</p>
+        <p class="footer__contact-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <a href="mailto:neil@neilatkinsoncounselling.co.uk">neil@neilatkinsoncounselling.co.uk</a>
+        </p>
+        <p class="footer__contact-item">Face to face in Consett, County Durham &middot; Online across the North East</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy"><small>&copy; <span id="current-year">2026</span> Neil Atkinson Counselling. All rights reserved.</small></p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://ncps.com/about-us/code-of-ethics/" target="_blank" rel="noopener noreferrer">NCPS Ethical Framework</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="content/faqs.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Wire up accordion — content already in HTML
+    document.querySelectorAll('.faq-item__question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('faq-item--open');
+        document.querySelectorAll('.faq-item--open').forEach(el => {
+          el.classList.remove('faq-item--open');
+          el.querySelector('button').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('faq-item--open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+        // Live search filter
+    const searchInput = document.getElementById('faq-search');
+    const noResults   = document.getElementById('faq-no-results');
+
+    searchInput.addEventListener('input', () => {
+      const term = searchInput.value.toLowerCase().trim();
+      let totalVisible = 0;
+
+      document.querySelectorAll('.faq-item').forEach(item => {
+        const matches = !term || item.dataset.q.includes(term) || item.dataset.a.includes(term);
+        item.classList.toggle('faq-item--hidden', !matches);
+        if (matches) totalVisible++;
+      });
+
+      // Hide categories with no visible items
+      document.querySelectorAll('.faq-category').forEach(cat => {
+        const hasVisible = [...cat.querySelectorAll('.faq-item')].some(i => !i.classList.contains('faq-item--hidden'));
+        cat.style.display = hasVisible ? '' : 'none';
+      });
+
+      noResults.style.display = totalVisible === 0 ? 'block' : 'none';
+      cta.style.display = term ? 'none' : '';
+    });
+  </script>
+
+  <script src="js/accessibility.js"></script>
+</body>
+</html>

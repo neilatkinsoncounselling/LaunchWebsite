@@ -1,0 +1,54 @@
+# Netlify configuration — Neil Atkinson Counselling
+
+# Clean URL rewrites (200 = serve the .html file transparently)
+# Root pages
+[[redirects]]
+  from = "/fees"
+  to = "/fees.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/faqs"
+  to = "/faqs.html"
+  status = 200
+
+[[redirects]]
+  from = "/crisis"
+  to = "/crisis.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/thankyou"
+  to = "/thankyou.html"
+  status = 200
+
+# Section pages
+[[redirects]]
+  from = "/what-i-help-with/:slug"
+  to = "/what-i-help-with/:slug.html"
+  status = 200
+
+[[redirects]]
+  from = "/how-i-work/:slug"
+  to = "/how-i-work/:slug.html"
+  status = 200
+
+[[redirects]]
+  from = "/guides/:slug"
+  to = "/guides/:slug.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/:slug"
+  to = "/blog/:slug.html"
+  status = 200

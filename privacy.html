@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy &amp; Confidentiality | Neil Atkinson Counselling</title>
+  <meta name="description" content="How Neil Atkinson handles your data, protects your sessions and maintains confidentiality — explained in plain English.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.neilatkinsoncounselling.co.uk/privacy">  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/favicon-180.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <style>
+    .privacy-page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 10rem 2rem 6rem;
+    }
+    .privacy-back {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--colour-taupe);
+      text-decoration: none;
+      margin-bottom: 2.5rem;
+      transition: color 0.2s;
+    }
+    .privacy-back:hover { color: var(--colour-brown); }
+    .privacy-eyebrow {
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--colour-taupe);
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+    .privacy-eyebrow::before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background: var(--colour-sand);
+    }
+    .privacy-heading {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 400;
+      color: var(--colour-brown);
+      line-height: 1.15;
+      margin-bottom: 1.6rem;
+    }
+    .privacy-heading em {
+      font-style: italic;
+      color: var(--colour-taupe);
+    }
+    .privacy-intro {
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--colour-subtext);
+      line-height: 1.85;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(158,136,114,0.2);
+      margin-bottom: 3rem;
+    }
+    .privacy-section {
+      margin-bottom: 2.8rem;
+      padding-bottom: 2.8rem;
+      border-bottom: 1px solid rgba(158,136,114,0.15);
+    }
+    .privacy-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    .privacy-section__title {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--colour-brown);
+      margin-bottom: 1rem;
+    }
+    .privacy-section__body {
+      font-size: 0.92rem;
+      font-weight: 300;
+      color: var(--colour-subtext);
+      line-height: 1.85;
+      margin-bottom: 0.9rem;
+    }
+    .privacy-section__body:last-child { margin-bottom: 0; }
+    .privacy-section__list {
+      list-style: none;
+      padding: 0;
+      margin: 0.8rem 0 1rem;
+    }
+    .privacy-section__list li {
+      font-size: 0.92rem;
+      font-weight: 300;
+      color: var(--colour-subtext);
+      line-height: 1.8;
+      padding: 0.35rem 0 0.35rem 1.2rem;
+      position: relative;
+    }
+    .privacy-section__list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.85rem;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--colour-sand);
+    }
+    .privacy-contact {
+      background: var(--colour-warm-off);
+      border: 1px solid rgba(158,136,114,0.2);
+      border-radius: 0.8rem;
+      padding: 1.8rem 2rem;
+      margin-top: 3rem;
+    }
+    .privacy-contact__title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--colour-brown);
+      margin-bottom: 0.6rem;
+    }
+    .privacy-contact__text {
+      font-size: 0.88rem;
+      font-weight: 300;
+      color: var(--colour-subtext);
+      line-height: 1.8;
+    }
+    .privacy-contact__text a {
+      color: var(--colour-taupe);
+      text-decoration: none;
+    }
+    .privacy-contact__text a:hover {
+      color: var(--colour-brown);
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .privacy-page { padding: 10rem 1.5rem 4rem; }
+    }
+
+    @media (min-width: 1024px) {
+      /* Service page heroes — centre eyebrow + title + desc */
+      .svc-hero { text-align: center; justify-content: center; }
+      .svc-hero__inner { margin: 0 auto; }
+      .svc-hero .section__eyebrow { justify-content: center; }
+      /* Service body — wider */
+      .svc-body { max-width: 1300px; padding: 5rem 4rem 6rem; }
+      .svc-content { max-width: 860px; }
+      .blog-grid { max-width: 900px; }
+      /* Guide/blog post hero — centre title */
+      .post-hero { text-align: center; align-items: flex-end; }
+      .post-hero__inner { margin: 0 auto; max-width: 900px; }
+      /* Guide/blog post body — wider */
+      .post-body { max-width: 1060px; padding: 4rem 5rem 5rem; }
+      /* How-i-work pages */
+      .svc-page { max-width: 1300px; }
+      .svc-sections { max-width: 1060px; }
+      /* Guides index */
+      .guides-listing { max-width: 1400px; }
+      /* Blog index */
+      .blog-listing .blog-grid { max-width: 1300px; }
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header role="banner">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/" class="nav__logo" aria-label="Neil Atkinson Counselling — home">
+        <img src="img/logo.webp" alt="Neil Atkinson Counselling" class="nav__logo-img" width="622" height="457" fetchpriority="high">
+        <img src="img/neil-atkinson.webp" alt="Neil Atkinson" class="nav__portrait" width="36" height="36" loading="lazy">
+      </a>
+            <span class="nav__sidebar-name">Neil Atkinson</span>
+      <span class="nav__sidebar-role">Integrative Counsellor<br>County Durham &amp; online</span>
+      <ul class="nav__links" role="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="what-i-help-with/">What I help with</a></li>
+        <li><a href="how-i-work/">How I work</a></li>
+        <li><a href="about.html">About Neil</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li><span class="nav__divider" aria-hidden="true"></span></li>
+        <li><a href="guides/">Guides</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="crisis.html">Crisis Support</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="index.html#booking" class="nav__cta">Book a Session</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+             stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <line x1="2" y1="5.5"  x2="20" y2="5.5"/>
+          <line x1="2" y1="11"   x2="20" y2="11"/>
+          <line x1="2" y1="16.5" x2="20" y2="16.5"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="privacy-page">
+
+      <a href="index.html" class="privacy-back">&#8592; Back to home</a>
+
+      <p class="privacy-eyebrow">Transparency</p>
+      <h1 class="privacy-heading">Privacy &amp; <em>confidentiality</em></h1>
+
+      <p class="privacy-intro">Your privacy matters to me. This page explains in plain English how I handle your information, how your sessions are protected, and what your rights are. It also serves as my privacy notice under UK GDPR.</p>
+
+      <section class="privacy-section">
+        <h2 class="privacy-section__title">Data controller</h2>
+        <p class="privacy-section__body">The data controller for the personal information described on this page is Neil Atkinson, trading as Neil Atkinson Counselling. You can contact me at <a href="mailto:neil@neilatkinsoncounselling.co.uk">neil@neilatkinsoncounselling.co.uk</a>.</p>
+      </section>
+
+      <section class="privacy-section">
+        <h2 class="privacy-section__title">Your sessions are confidential</h2>
+        <p class="privacy-section__body">Everything you share in a session stays between us. I will not share your personal information with employers, family members, or anyone else without your explicit consent.</p>
+        <p class="privacy-section__body">There are a small number of exceptions where I have a professional or legal duty to act. These are:</p>
+        <ul class="privacy-section__list">
+          <li>If I believe there is a serious and imminent risk of harm to you or to another person, including a child or vulnerable adult</li>
+          <li>If I am required to disclose information by a court order or by law, for example under the Terrorism Act 2000 or the Drug Trafficking Act 1994</li>
+          <li>If a safeguarding concern arises involving a child or vulnerable adult, in which case I may need to share relevant information with the appropriate safeguarding authority</li>
+        </ul>
+        <p class="privacy-section__body">In any of these situations, wherever possible I will discuss the matter with you first. These exceptions are rare, but I want you to understand them clearly from the outset. I will explain them again at our first session.</p>
+        <p class="privacy-section__body">As part of my professional practice, I receive regular clinical supervision. This means I meet confidentially with an experienced supervisor to reflect on my work and make sure I am supporting you as effectively as possible. Your identity is never shared — only anonymised details may be discussed. Supervision is a professional requirement and one of the ways I maintain the quality and safety of my practice.</p>
+      </section>
+
+      <section class="privacy-section">
+        <h2 class="privacy-section__title">What information I collect and why</h2>
+        <p class="privacy-section__body">I collect only the information I need to provide you with a safe and effective counselling service. This includes:</p>
+        <ul class="privacy-section__list">
+          <li>Your name, contact details and emergency contact information</li>
+          <li>Brief clinical notes relating to your sessions</li>
+          <li>Any information you choose to share through the contact form on this website</li>
+          <li>Records relating to fees and payments</li>
+        </ul>
+      </section>
+
+      <section class="privacy-section">
+        <h2 class="privacy-section__title">Lawful basis for processing</h2>
+        <p class="privacy-section__body">Under UK GDPR, I rely on the following lawful bases to process your personal data:</p>
+        <ul class="privacy-section__list">
+          <li><strong>Legitimate interests</strong> — to respond to enquiries submitted through the contact form on this website, and to manage the practical aspects of our counselling relationship such as scheduling and payment</li>
+          <li><strong>Contract</strong> — to provide the counselling service we have agreed to, including maintaining session notes and managing appointments</li>
+          <li><strong>Explicit consent</strong> — for the processing of special category data, which includes information about your mental and physical health that you share during sessions. You may withdraw this consent at any time</li>
+          <li><strong>Legal obligation</strong> — where I am required by law to retain certain records, such as financial records for tax purposes</li>
+        </ul>
+      </section>
+
+      <section class="privacy-section">
+        <h2 class="privacy-section__title">How I store your data</h2>
+        <p class="privacy-section__body">All personal data is stored securely. Paper records are kept in a locked location. Digital records are stored on encrypted, password-protected devices. I take reasonable steps to protect your information from unauthorised access, loss or damage.</p>
+        <p class="privacy-section__body">Some of your data may be processed by third-party services that I use to run my practice. These may include my website hosting provider (Netlify), my email provider, and any secure video platform used for online sessions. I only use services that offer appropriate safeguards for your data, and I do not share your clinical or session information with any of these providers.</p>
+      </section>
+
+      <section class="privacy-section">
+        <h2 class="privacy-section__title">How long I keep your data</h2>
+        <p class="privacy-section__body">I retain different types of information for different periods, in line with professional guidance and legal requirements:</p>
+        <ul class="privacy-section__list">
+          <li><strong>Enquiries</strong> — if you contact me but do not go on to become a client, I will delete your details within six months of our last contact</li>
+          <li><strong>Client records and session notes</strong> — retained for seven years after the end of our therapeutic relationship, in line with professional body guidance and insurance requirements</li>
+          <li><strong>Financial records</strong> — retained for seven years as required by HMRC</li>
+        </ul>
+        <p class="privacy-section__body">After the relevant retention period, records are securely destroyed.</p>
+      </section>
+
+      <section class="privacy-section">
+        <h2 class="privacy-section__title">Your rights</h2>
+        <p class="privacy-section__body">Under UK GDPR, you have the right to:</p>
+        <ul class="privacy-section__list">
+          <li>Access the personal data I hold about you</li>
+          <li>Ask me to correct any inaccuracies in your data</li>
+          <li>Ask me to delete your data, where there is no overriding legal or professional reason for me to keep it</li>
+          <li>Withdraw your consent to the processing of special category data at any time</li>
+          <li>Object to data processing based on legitimate interests</li>
+          <li>Request that your data be transferred to another provider in a commonly used format</li>
+        </ul>
+        <p class="privacy-section__body">To exercise any of these rights, contact me at <a href="mailto:neil@neilatkinsoncounselling.co.uk">neil@neilatkinsoncounselling.co.uk</a>. I will respond within one month.</p>
+        <p class="privacy-section__body">If you are not satisfied with how I have handled your data, you have the right to lodge a complaint with the Information Commissioner&rsquo;s Office (ICO). You can contact the ICO at <a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener noreferrer">ico.org.uk</a> or by telephone on 0303 123 1113.</p>
+      </section>
+
+      <section class="privacy-section">
+        <h2 class="privacy-section__title">Professional insurance</h2>
+        <p class="privacy-section__body">I hold valid professional indemnity insurance as required by the NCPS. This protects both of us and is something I maintain as a standard part of my practice.</p>
+      </section>
+
+      <section class="privacy-section">
+        <h2 class="privacy-section__title">NCPS membership and ethical framework</h2>
+        <p class="privacy-section__body">I am a member of the National Counselling and Psychotherapy Society (NCPS) and practise in accordance with their ethical framework. In practical terms, this means you can expect:</p>
+        <ul class="privacy-section__list">
+          <li>A qualified counsellor, MNCPS (Acc.), working to professional standards</li>
+          <li>Ongoing supervision and continued professional development</li>
+          <li>A clear complaints procedure if you are ever dissatisfied</li>
+        </ul>
+        <p class="privacy-section__body">You can read the full NCPS ethical framework at <a href="https://ncps.com/about-us/code-of-ethics/" target="_blank" rel="noopener noreferrer">ncps.com</a>.</p>
+      </section>
+
+      <section class="privacy-section">
+        <h2 class="privacy-section__title">Complaints</h2>
+        <p class="privacy-section__body">If you are unhappy with any aspect of my service, I would encourage you to raise it with me directly in the first instance. I will take your concern seriously and do my best to resolve it.</p>
+        <p class="privacy-section__body">If you feel the matter has not been resolved, or if you would prefer not to raise it with me, you can make a formal complaint through the NCPS. Details of their complaints procedure are available at <a href="https://ncps.com" target="_blank" rel="noopener noreferrer">ncps.com</a>.</p>
+      </section>
+
+      <section class="privacy-section" id="cookies">
+        <h2 class="privacy-section__title">This website and cookies</h2>
+        <p class="privacy-section__body">This website does not use tracking cookies or advertising technology. I do not profile visitors or share browsing data with third parties. The only information I receive through this website is what you voluntarily submit via the contact form — and that is delivered to me via my website hosting provider (Netlify) and email.</p>
+      </section>
+
+      <div class="privacy-contact">
+        <p class="privacy-contact__title">Any questions?</p>
+        <p class="privacy-contact__text">
+          If you have any questions about how your data is handled or anything else on this page, please get in touch at <a href="mailto:neil@neilatkinsoncounselling.co.uk">neil@neilatkinsoncounselling.co.uk</a> — I am happy to talk it through.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div>
+        <a href="/" aria-label="Neil Atkinson Counselling — home">
+          <img src="img/logo.webp" alt="Neil Atkinson Counselling" width="160" height="auto" loading="lazy" style="width:160px;height:auto;margin-bottom:0.8rem;display:block">
+        </a>
+        <p class="footer__tagline">Integrative counselling with Neil Atkinson, MNCPS (Acc.). Face to face, online, telephone and walk and talk across the North East of England.</p>
+      </div>
+      <nav class="footer__col" aria-label="What I help with">
+        <p class="footer__col-title">What I help with</p>
+        <ul role="list">
+          <li><a href="what-i-help-with/anxiety-stress.html">Anxiety and Stress</a></li>
+          <li><a href="what-i-help-with/depression.html">Depression</a></li>
+          <li><a href="what-i-help-with/grief-loss.html">Grief and Loss</a></li>
+          <li><a href="what-i-help-with/trauma.html">Trauma</a></li>
+          <li><a href="what-i-help-with/mens-mental-health.html">Men&rsquo;s Mental Health</a></li>
+          <li><a href="what-i-help-with/neurodivergent-support.html">Neurodivergent Support</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-label="How I work">
+        <p class="footer__col-title">How I work</p>
+        <ul role="list">
+          <li><a href="how-i-work/face-to-face.html">Face to Face Counselling</a></li>
+          <li><a href="how-i-work/online-counselling.html">Online Counselling</a></li>
+          <li><a href="how-i-work/telephone.html">Telephone Counselling</a></li>
+          <li><a href="how-i-work/walk-and-talk.html">Walk and Talk Therapy</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-label="Information">
+        <p class="footer__col-title">Information</p>
+        <ul role="list">
+          <li><a href="about.html">About Neil</a></li>
+          <li><a href="fees.html">Fees</a></li>
+          <li><a href="index.html#approach">My approach</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="guides/">Guides</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="crisis.html">Crisis Support</a></li>
+          <li><a href="privacy.html">Privacy &amp; Confidentiality</a></li>
+          <li><a href="privacy.html#cookies">Cookie Policy</a></li>
+          <li><a href="index.html#booking">Get in touch</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <p class="footer__col-title">Contact</p>
+        <p class="footer__contact-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <a href="mailto:neil@neilatkinsoncounselling.co.uk">neil@neilatkinsoncounselling.co.uk</a>
+        </p>
+        <p class="footer__contact-item">Face to face in Consett, County Durham &middot; Online across the North East</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy"><small>&copy; <span id="current-year">2026</span> Neil Atkinson Counselling. All rights reserved.</small></p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://ncps.com/about-us/code-of-ethics/" target="_blank" rel="noopener noreferrer">NCPS Ethical Framework</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/accessibility.js"></script>
+  <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
