@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Guides | Neil Atkinson Counselling</title>
+  <meta name="description" content="In depth guides on mental health topics from Neil Atkinson Counselling. Understand anxiety, depression, trauma, grief and more.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.neilatkinsoncounselling.co.uk/guides/">
+  <link rel="stylesheet" href="../css/styles.min.css">  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/favicon-180.png">
+  <link rel="manifest" href="/site.webmanifest">
+<style>
+    .guides-hero { min-height: 55vh; display: flex; align-items: center; justify-content: center; text-align: left; position: relative; overflow: hidden; padding: 10rem 2rem 4rem; }
+    .guides-hero__bg { position: absolute; inset: 0; background-image: url('../img/hero-bg.webp'); background-size: cover; background-position: center 40%; transform: scale(1.04); animation: guides-zoom 18s ease-out forwards; }
+    @keyframes guides-zoom { from { transform:scale(1.04); } to { transform:scale(1.0); } }
+    @keyframes guides-fade { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+    .guides-hero__overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(10,8,4,0.6) 100%), radial-gradient(ellipse at center, rgba(10,8,4,0.55) 0%, rgba(10,8,4,0.3) 40%, transparent 70%); }
+    .guides-hero__inner { position: relative; z-index: 2; max-width: 680px; margin: 0 auto; }
+    .guides-hero__eyebrow { display: flex; align-items: center; justify-content: center; gap: 0.7rem; width: 100%; font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.85); margin-bottom: 1.2rem; text-shadow: 0 1px 6px rgba(0,0,0,0.5); opacity: 0; animation: guides-fade 0.8s 0.3s ease forwards; }
+    .guides-hero__eyebrow::before, .guides-hero__eyebrow::after { content: ''; display: block; width: 2rem; height: 1px; background: rgba(201,185,154,0.5); }
+    .guides-hero__title { font-family: var(--font-display); font-size: clamp(2.8rem, 5vw, 4rem); font-weight: 300; color: #fff; line-height: 1.08; text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 4px 24px rgba(0,0,0,0.4); margin-bottom: 1rem; opacity: 0; animation: guides-fade 0.9s 0.6s ease forwards; }
+    .guides-hero__title em { font-style: italic; color: #f5e8cc; }
+    .guides-hero__desc { font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.88); text-shadow: 0 1px 8px rgba(0,0,0,0.5); max-width: 480px; margin: 0 auto; line-height: 1.8; opacity: 0; animation: guides-fade 0.9s 1s ease forwards; }
+    .guides-listing { max-width: 1140px; margin: 0 auto; padding: 5rem 2rem 6rem; }
+    .guides-empty { text-align: center; font-size: 1rem; font-weight: 300; color: var(--colour-subtext); padding: 4rem 0; }
+    .guide-group { margin-bottom: 5rem; }
+    .guide-group__header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.6rem; padding-bottom: 0.8rem; border-bottom: 1.5px solid rgba(158,136,114,0.15); }
+    .guide-group__title { font-family: var(--font-display); font-size: 1.8rem; font-weight: 500; color: var(--colour-brown); }
+    .guide-group__service-link { font-size: 0.78rem; letter-spacing: 0.08em; color: var(--colour-taupe); text-decoration: none; display: flex; align-items: center; gap: 0.3rem; transition: color 0.2s; flex-shrink: 0; }
+    .guide-group__service-link:hover { color: var(--colour-brown); }
+    .guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; list-style: none; padding: 0; margin: 0; }
+    .guide-group .blog-card__tab { min-height: 88px; }
+    @media (max-width: 960px) { .guide-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .guide-grid { grid-template-columns: 1fr; } .guides-listing { padding: 3rem 1.5rem 4rem; } }
+
+    @media (min-width: 1024px) {
+      /* Service page heroes — centre eyebrow + title + desc */
+      .svc-hero { text-align: center; justify-content: center; }
+      .svc-hero__inner { margin: 0 auto; }
+      .svc-hero .section__eyebrow { justify-content: center; }
+      /* Service body — wider */
+      .svc-body { max-width: 1300px; padding: 5rem 4rem 6rem; }
+      .svc-content { max-width: 860px; }
+      .blog-grid { max-width: 900px; }
+      /* Guide/blog post hero — centre title */
+      .post-hero { text-align: center; align-items: flex-end; }
+      .post-hero__inner { margin: 0 auto; max-width: 900px; }
+      /* Guide/blog post body — wider */
+      .post-body { max-width: 1060px; padding: 4rem 5rem 5rem; }
+      /* How-i-work pages */
+      .svc-page { max-width: 1300px; }
+      .svc-sections { max-width: 1060px; }
+      /* Guides index */
+      .guides-listing { max-width: 1400px; }
+      /* Blog index */
+      .blog-listing .blog-grid { max-width: 1300px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header role="banner">
+    <nav class="nav" aria-label="Main navigation">
+
+      <a href="../index.html" class="nav__logo" aria-label="Neil Atkinson Counselling — home">
+        <img src="../img/logo.webp" alt="Neil Atkinson Counselling" class="nav__logo-img" width="622" height="457" fetchpriority="high">
+        <img src="../img/neil-atkinson.webp" alt="Neil Atkinson" class="nav__portrait" width="36" height="36" loading="lazy">
+      </a>
+
+            <span class="nav__sidebar-name">Neil Atkinson</span>
+      <span class="nav__sidebar-role">Integrative Counsellor<br>County Durham &amp; online</span>
+      <ul class="nav__links" role="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="../what-i-help-with/">What I help with</a></li>
+        <li><a href="../how-i-work/">How I work</a></li>
+        <li><a href="../about.html">About Neil</a></li>
+        <li><a href="../fees.html">Fees</a></li>
+        <li><span class="nav__divider" aria-hidden="true"></span></li>
+        <li><a href="../guides/">Guides</a></li>
+        <li><a href="../blog/">Blog</a></li>
+        <li><a href="../crisis.html">Crisis Support</a></li>
+        <li><a href="../faqs.html">FAQs</a></li>
+        <li><a href="../index.html#booking" class="nav__cta">Book a Session</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+             stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <line x1="2" y1="5.5"  x2="20" y2="5.5"/>
+          <line x1="2" y1="11"   x2="20" y2="11"/>
+          <line x1="2" y1="16.5" x2="20" y2="16.5"/>
+        </svg>
+      </button>
+
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="guides-hero">
+      <div class="guides-hero__bg" aria-hidden="true"></div>
+      <div class="guides-hero__overlay" aria-hidden="true"></div>
+      <div class="guides-hero__inner">
+        <p class="guides-hero__eyebrow">Guides</p>
+        <h1 class="guides-hero__title">In-depth <em>guides</em></h1>
+        <p class="guides-hero__desc">Detailed, evidence-informed guides on mental health topics &mdash; written by Neil to help you understand what you're going through.</p>
+      </div>
+    </section>
+
+    <section class="guides-listing" aria-labelledby="guides-heading">
+      <h2 class="visually-hidden" id="guides-heading">All guides</h2>
+      <div id="guides-container"><div class="guide-group"><div class="guide-group__header"><h2 class="guide-group__title">Anxiety and Stress</h2><a href="../what-i-help-with/anxiety-stress.html" class="guide-group__service-link">View service page →</a></div><ul class="guide-grid" role="list"><li class="blog-card"><a href="what-is-anxiety.html" class="blog-card__link" aria-label="Read guide: What is anxiety?"><div class="blog-card__tab"><h3 class="blog-card__title">What is anxiety?</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">A plain English guide to what anxiety is, how it feels in the mind and body, and what helps.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="why-anxiety-does-not-switch-off.html" class="blog-card__link" aria-label="Read guide: Why anxiety does not switch off"><div class="blog-card__tab"><h3 class="blog-card__title">Why anxiety does not switch off</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Anxiety can feel constant and exhausting. This guide explains why it keeps going and what sits underneath it.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="how-to-stop-overthinking-practical-steps.html" class="blog-card__link" aria-label="Read guide: How to stop overthinking: practical steps"><div class="blog-card__tab"><h3 class="blog-card__title">How to stop overthinking: practical steps</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Overthinking can feel endless. These practical steps can help you step out of the loop and feel more grounded.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="how-counselling-helps-with-anxiety.html" class="blog-card__link" aria-label="Read guide: How counselling helps with anxiety"><div class="blog-card__tab"><h3 class="blog-card__title">How counselling helps with anxiety</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Counselling offers a calm space to understand anxiety and learn new ways to respond to it.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li></ul></div><div class="guide-group"><div class="guide-group__header"><h2 class="guide-group__title">Depression</h2><a href="../what-i-help-with/depression.html" class="guide-group__service-link">View service page →</a></div><ul class="guide-grid" role="list"><li class="blog-card"><a href="what-is-depression.html" class="blog-card__link" aria-label="Read guide: What is depression?"><div class="blog-card__tab"><h3 class="blog-card__title">What is depression?</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">A plain English guide to what depression is, how it differs from ordinary sadness and what it can look like.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="why-depression-makes-everything-feel-pointless.html" class="blog-card__link" aria-label="Read guide: Why depression makes everything feel pointless"><div class="blog-card__tab"><h3 class="blog-card__title">Why depression makes everything feel pointless</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Depression can drain meaning and motivation. This guide explains why everything can start to feel flat or pointless.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="small-steps-out-of-depression.html" class="blog-card__link" aria-label="Read guide: Small steps out of depression"><div class="blog-card__tab"><h3 class="blog-card__title">Small steps out of depression</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">When everything feels heavy, small steps matter. This guide focuses on realistic ways to begin moving forward.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="how-counselling-helps-with-depression.html" class="blog-card__link" aria-label="Read guide: How counselling helps with depression"><div class="blog-card__tab"><h3 class="blog-card__title">How counselling helps with depression</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Counselling can support you through depression by offering space, understanding, and steady progress at your pace.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li></ul></div><div class="guide-group"><div class="guide-group__header"><h2 class="guide-group__title">Grief and Loss</h2><a href="../what-i-help-with/grief-loss.html" class="guide-group__service-link">View service page →</a></div><ul class="guide-grid" role="list"><li class="blog-card"><a href="what-is-grief.html" class="blog-card__link" aria-label="Read guide: What is grief?"><div class="blog-card__tab"><h3 class="blog-card__title">What is grief?</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">A plain English guide to what grief is, how it can feel, and why it does not look the same for everyone.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="why-grief-does-not-follow-a-straight-line.html" class="blog-card__link" aria-label="Read guide: Why grief does not follow a straight line"><div class="blog-card__tab"><h3 class="blog-card__title">Why grief does not follow a straight line</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Grief rarely moves neatly. This guide explains why it comes in waves and why that is normal.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="how-to-cope-with-bereavement.html" class="blog-card__link" aria-label="Read guide: How to cope with bereavement"><div class="blog-card__tab"><h3 class="blog-card__title">How to cope with bereavement</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Simple, realistic ways to cope with bereavement and be gentler with yourself while you grieve.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="how-counselling-helps-with-grief-and-loss.html" class="blog-card__link" aria-label="Read guide: How counselling helps with grief and loss"><div class="blog-card__tab"><h3 class="blog-card__title">How counselling helps with grief and loss</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Counselling can offer space, support, and understanding when grief feels too much to carry on your own.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li></ul></div><div class="guide-group"><div class="guide-group__header"><h2 class="guide-group__title">Trauma</h2><a href="../what-i-help-with/trauma.html" class="guide-group__service-link">View service page →</a></div><ul class="guide-grid" role="list"><li class="blog-card"><a href="what-is-trauma.html" class="blog-card__link" aria-label="Read guide: What is trauma?"><div class="blog-card__tab"><h3 class="blog-card__title">What is trauma?</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">A plain English guide to what trauma is, how it affects the mind and body, and why the impact can last long after the event.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="why-trauma-stays-in-the-body.html" class="blog-card__link" aria-label="Read guide: Why trauma stays in the body"><div class="blog-card__tab"><h3 class="blog-card__title">Why trauma stays in the body</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Trauma is not just a memory. This guide explains why it is often felt physically as well as emotionally.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="how-to-begin-healing-from-trauma.html" class="blog-card__link" aria-label="Read guide: How to begin healing from trauma"><div class="blog-card__tab"><h3 class="blog-card__title">How to begin healing from trauma</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Healing from trauma takes time. This guide offers gentle starting points to help you feel safer and more grounded.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="how-counselling-helps-with-trauma.html" class="blog-card__link" aria-label="Read guide: How counselling helps with trauma"><div class="blog-card__tab"><h3 class="blog-card__title">How counselling helps with trauma</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Counselling can support trauma recovery by providing a safe space and helping you process experiences at your own pace.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li></ul></div><div class="guide-group"><div class="guide-group__header"><h2 class="guide-group__title">Men's Mental Health</h2><a href="../what-i-help-with/mens-mental-health.html" class="guide-group__service-link">View service page →</a></div><ul class="guide-grid" role="list"><li class="blog-card"><a href="what-is-mens-mental-health.html" class="blog-card__link" aria-label="Read guide: What is men's mental health?"><div class="blog-card__tab"><h3 class="blog-card__title">What is men's mental health?</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">A plain English guide to men's mental health, why distress can look different in men, and why that matters.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="why-men-find-it-hard-to-ask-for-help.html" class="blog-card__link" aria-label="Read guide: Why men find it hard to ask for help"><div class="blog-card__tab"><h3 class="blog-card__title">Why men find it hard to ask for help</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Many men struggle to ask for support. This guide explores what sits underneath that difficulty.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="how-to-start-talking-about-how-you-feel.html" class="blog-card__link" aria-label="Read guide: How to start talking about how you feel"><div class="blog-card__tab"><h3 class="blog-card__title">How to start talking about how you feel</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Talking about feelings does not have to start with a big speech. This guide offers realistic first steps.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="how-counselling-helps-mens-mental-health.html" class="blog-card__link" aria-label="Read guide: How counselling helps men's mental health"><div class="blog-card__tab"><h3 class="blog-card__title">How counselling helps men's mental health</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Counselling can give men a practical, respectful space to talk, think, and feel more understood.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li></ul></div><div class="guide-group"><div class="guide-group__header"><h2 class="guide-group__title">Neurodivergent Support</h2><a href="../what-i-help-with/neurodivergent-support.html" class="guide-group__service-link">View service page →</a></div><ul class="guide-grid" role="list"><li class="blog-card"><a href="what-is-neurodivergent-support-in-counselling.html" class="blog-card__link" aria-label="Read guide: What is neurodivergent support in counselling?"><div class="blog-card__tab"><h3 class="blog-card__title">What is neurodivergent support in counselling?</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">A plain English guide to what neurodivergent support in counselling actually means, what a flexible approach looks like in practice, and why you do not need a diagnosis to access it.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="why-neurodivergent-people-often-struggle-with-traditional-therapy.html" class="blog-card__link" aria-label="Read guide: Why neurodivergent people can struggle with traditional therapy"><div class="blog-card__tab"><h3 class="blog-card__title">Why neurodivergent people can struggle with traditional therapy</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">It is common for neurodivergent people to try counselling and find it does not work. This guide explains the specific reasons why, and what makes the difference.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="how-to-find-the-right-support-if-you-are-neurodivergent.html" class="blog-card__link" aria-label="Read guide: How to find the right support if you are neurodivergent"><div class="blog-card__tab"><h3 class="blog-card__title">How to find the right support if you are neurodivergent</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Practical guidance on what to look for in a counsellor, what questions to ask before you start, and how to tell whether someone is likely to be a good fit.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li><li class="blog-card"><a href="how-counselling-helps-neurodivergent-people.html" class="blog-card__link" aria-label="Read guide: How counselling helps neurodivergent people"><div class="blog-card__tab"><h3 class="blog-card__title">How counselling helps neurodivergent people</h3></div><div class="blog-card__body"><p class="blog-card__excerpt">Good counselling can adapt to neurodivergent clients rather than expecting them to fit a fixed model.</p><div class="blog-card__footer"><span class="blog-card__author-name">Neil Atkinson</span><span class="blog-card__read-more" aria-hidden="true">Read <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span></div></div></a></li></ul></div></div>
+    </section>
+
+  </main>
+
+<footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div>
+        <a href="/" aria-label="Neil Atkinson Counselling — home">
+          <img src="../img/logo.webp" alt="Neil Atkinson Counselling" width="160" height="auto" loading="lazy" style="width:160px;height:auto;margin-bottom:0.8rem;display:block">
+        </a>
+        <p class="footer__tagline">Integrative counselling with Neil Atkinson, MNCPS (Acc.). Face to face, online, telephone and walk and talk across the North East of England.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="What I help with">
+        <p class="footer__col-title">What I help with</p>
+        <ul role="list">
+          <li><a href="../what-i-help-with/anxiety-stress.html">Anxiety and Stress</a></li>
+          <li><a href="../what-i-help-with/depression.html">Depression</a></li>
+          <li><a href="../what-i-help-with/grief-loss.html">Grief and Loss</a></li>
+          <li><a href="../what-i-help-with/trauma.html">Trauma</a></li>
+          <li><a href="../what-i-help-with/mens-mental-health.html">Men&rsquo;s Mental Health</a></li>
+          <li><a href="../what-i-help-with/neurodivergent-support.html">Neurodivergent Support</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="How I work">
+        <p class="footer__col-title">How I work</p>
+        <ul role="list">
+          <li><a href="../how-i-work/face-to-face.html">Face to Face Counselling</a></li>
+          <li><a href="../how-i-work/online-counselling.html">Online Counselling</a></li>
+          <li><a href="../how-i-work/telephone.html">Telephone Counselling</a></li>
+          <li><a href="../how-i-work/walk-and-talk.html">Walk and Talk Therapy</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Information">
+        <p class="footer__col-title">Information</p>
+        <ul role="list">
+          <li><a href="../about.html">About Neil</a></li>
+          <li><a href="../fees.html">Fees</a></li>
+          <li><a href="../index.html#approach">My approach</a></li>
+          <li><a href="../faqs.html">FAQs</a></li>
+          <li><a href="../guides/">Guides</a></li>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../crisis.html">Crisis Support</a></li>
+          <li><a href="../privacy.html">Privacy &amp; Confidentiality</a></li>
+          <li><a href="../privacy.html#cookies">Cookie Policy</a></li>
+          <li><a href="../index.html#booking">Get in touch</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <p class="footer__col-title">Contact</p>
+        <p class="footer__contact-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <a href="mailto:neil@neilatkinsoncounselling.co.uk">neil@neilatkinsoncounselling.co.uk</a>
+        </p>
+        <p class="footer__contact-item">Face to face in Consett, County Durham &middot; Online across the North East</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy"><small>&copy; <span id="current-year">2026</span> Neil Atkinson Counselling. All rights reserved.</small></p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="https://ncps.com/about-us/code-of-ethics/" target="_blank" rel="noopener noreferrer">NCPS Ethical Framework</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+  <script src="../js/accessibility.js"></script>
+  <script>document.getElementById("current-year").textContent=new Date().getFullYear();</script>
+</body>
+</html>

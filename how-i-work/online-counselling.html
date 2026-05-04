@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Counselling — Access from Anywhere | Neil Atkinson Counselling</title>
+  <meta name="description" content="Online counselling you can access from anywhere. Secure video sessions with Neil Atkinson, integrative counsellor, MNCPS (Acc.), County Durham.">
+  <link rel="stylesheet" href="../css/styles.min.css">  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/favicon-180.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    .svc-hero {
+      min-height: 55vh;
+      display: flex; align-items: center; justify-content: flex-start;
+      text-align: left; position: relative; overflow: hidden;
+      padding: 9rem 4rem 4rem;
+    }
+    .svc-hero__bg {
+      position: absolute; inset: 0;
+      background-image: url('../img/service-online.webp');
+      background-size: cover; background-position: center 40%;
+      transform: scale(1.04);
+      animation: svc-zoom 18s ease-out forwards;
+    }
+    @keyframes svc-zoom { from { transform: scale(1.04); } to { transform: scale(1.0); } }
+    .svc-hero__overlay { position: absolute; inset: 0; background: 
+    linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(10,8,4,0.6) 100%),
+    radial-gradient(ellipse at center, rgba(10,8,4,0.55) 0%, rgba(10,8,4,0.3) 40%, transparent 70%); }
+    .svc-hero__inner { position: relative; z-index: 2; max-width: 680px; margin: 0 auto; }
+    .svc-hero .section__eyebrow {
+      color: rgba(255,255,255,0.85); text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+      opacity: 0; animation: svc-fade 0.8s 0.3s ease forwards;
+      justify-content: center; margin-bottom: 1rem;
+    }
+    .svc-hero .section__eyebrow::before,
+    .svc-hero .section__eyebrow::after { background: rgba(201,185,154,0.5); }
+    .svc-hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 300; color: #fff; line-height: 1.1; margin-bottom: 1rem;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.75), 0 4px 32px rgba(0,0,0,0.55);
+      opacity: 0; animation: svc-fade 0.9s 0.6s ease forwards;
+    }
+    .svc-hero__title em { font-style: italic; color: #f5e8cc; }
+      /* Service page heroes — centre eyebrow + title + desc */
+      .svc-hero { text-align: center; justify-content: center; }
+      .svc-hero__inner { margin: 0 auto; }
+      .svc-hero .section__eyebrow { justify-content: center; }
+    .svc-hero__desc {
+      font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.88);
+      text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+      max-width: 520px; margin: 0 auto; line-height: 1.8;
+      opacity: 0; animation: svc-fade 0.9s 0.9s ease forwards;
+    }
+    @keyframes svc-fade {
+      from { opacity:0; transform: translateY(18px); }
+      to   { opacity:1; transform: translateY(0); }
+    }
+    .svc-body { max-width: 820px; margin: 0 auto; padding: 5rem 2rem; }
+    .svc-intro {
+      font-family: var(--font-display);
+      font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+      font-weight: 300; color: var(--colour-brown); line-height: 1.75;
+      margin-bottom: 3.5rem; padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(158,136,114,0.15);
+    }
+    .svc-section { margin-bottom: 3rem; }
+    .svc-section__title {
+      font-family: var(--font-display); font-size: 1.7rem; font-weight: 500;
+      color: var(--colour-brown); margin-bottom: 1rem; line-height: 1.2;
+    }
+    .svc-section__body { font-size: 1rem; font-weight: 300; color: var(--colour-subtext); line-height: 1.85; }
+    .svc-section__body p { margin-bottom: 1rem; }
+    .svc-section__body p:last-child { margin-bottom: 0; }
+    .svc-section__body ul { margin: 0.8rem 0 1rem 1.4rem; }
+    .svc-section__body li { margin-bottom: 0.4rem; }
+    .svc-counsellors {
+      background: var(--colour-warm-off); border-radius: 1.2rem;
+      padding: 2rem 2.2rem; margin: 3.5rem 0;
+    }
+    .svc-counsellors__title {
+      font-family: var(--font-display); font-size: 1.2rem; font-weight: 500;
+      color: var(--colour-brown); margin-bottom: 1rem;
+    }
+    .svc-counsellors__list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .svc-counsellor {
+      display: inline-block; padding: 0.4rem 1rem;
+      background: #fff; border: 1.5px solid rgba(158,136,114,0.2);
+      border-radius: 3rem; font-size: 0.85rem; color: var(--colour-brown);
+      text-decoration: none; transition: border-color 0.2s, background 0.2s;
+    }
+    .svc-counsellor:hover { border-color: var(--colour-taupe); background: var(--colour-cream); }
+    .svc-cta {
+      background: var(--colour-brown); border-radius: 1.4rem;
+      padding: 3rem 2.5rem; text-align: center;
+      position: relative; overflow: hidden; margin-top: 3rem;
+    }
+    .svc-cta::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: url('../img/nature-band.webp');
+      background-size: cover; opacity: 0.07; pointer-events: none;
+    }
+    .svc-cta__inner { position: relative; z-index: 1; }
+    .svc-cta__title {
+      font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 400; color: var(--colour-cream); margin-bottom: 0.8rem; line-height: 1.2;
+    }
+    .svc-cta__title em { font-style: italic; color: var(--colour-sand); }
+    .svc-cta__desc {
+      font-size: 0.95rem; font-weight: 300; color: rgba(247,244,239,0.85);
+      margin: 0 auto 1.8rem; line-height: 1.7; max-width: 480px;
+    }
+    .svc-cta__btn {
+      display: inline-block; background: var(--colour-cream); color: var(--colour-brown);
+      padding: 0.95rem 2.4rem; border-radius: 3rem; font-size: 0.85rem;
+      font-weight: 500; letter-spacing: 0.06em; text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .svc-cta__btn:hover { background: var(--colour-sand); transform: translateY(-2px); }
+
+    .svc-related { display: none; background: var(--colour-warm-off); border-radius: 1.2rem; padding: 2rem 2.2rem; margin: 3.5rem 0 0; }
+    .svc-related__title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 500; color: var(--colour-brown); margin-bottom: 1rem; }
+    .svc-related__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+    .svc-related-link { display: flex; justify-content: space-between; align-items: center; padding: 0.7rem 1rem; background: #fff; border: 1.5px solid rgba(158,136,114,0.15); border-radius: 0.6rem; text-decoration: none; transition: border-color 0.2s; gap: 1rem; }
+    .svc-related-link:hover { border-color: var(--colour-taupe); }
+    .svc-related-title { font-size: 0.9rem; color: var(--colour-brown); font-weight: 400; }
+    .svc-related-meta { font-size: 0.75rem; color: var(--colour-taupe); white-space: nowrap; flex-shrink: 0; }
+    @media (max-width: 600px) {
+      .svc-body { padding: 3.5rem 1.5rem; }
+      .svc-cta { padding: 2.2rem 1.5rem; }
+    }
+  </style>
+  <link rel="canonical" href="https://www.neilatkinsoncounselling.co.uk/how-i-work/online-counselling">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Online Counselling — Access from Anywhere | Neil Atkinson Counselling">
+  <meta property="og:description" content="Online counselling with Neil Atkinson, integrative counsellor, MNCPS (Acc.). Attend from home or any private space — no travel needed.">
+  <meta property="og:url" content="https://www.neilatkinsoncounselling.co.uk/how-i-work/online-counselling">
+  <meta property="og:image" content="https://www.neilatkinsoncounselling.co.uk/img/og-image.jpg">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+            <header role="banner">
+    <nav class="nav" aria-label="Main navigation">
+
+      <a href="../index.html" class="nav__logo" aria-label="Neil Atkinson Counselling — home">
+        <img src="../img/logo.webp" alt="Neil Atkinson Counselling" class="nav__logo-img" width="622" height="457" fetchpriority="high">
+        <img src="../img/neil-atkinson.webp" alt="Neil Atkinson" class="nav__portrait" width="36" height="36" loading="lazy">
+      </a>
+
+            <span class="nav__sidebar-name">Neil Atkinson</span>
+      <span class="nav__sidebar-role">Integrative Counsellor<br>County Durham &amp; online</span>
+      <ul class="nav__links" role="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="../what-i-help-with/">What I help with</a></li>
+        <li><a href="../how-i-work/">How I work</a></li>
+        <li><a href="../about.html">About Neil</a></li>
+        <li><a href="../fees.html">Fees</a></li>
+        <li><span class="nav__divider" aria-hidden="true"></span></li>
+        <li><a href="../guides/">Guides</a></li>
+        <li><a href="../blog/">Blog</a></li>
+        <li><a href="../crisis.html">Crisis Support</a></li>
+        <li><a href="../faqs.html">FAQs</a></li>
+        <li><a href="../index.html#booking" class="nav__cta">Book a Session</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+             stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <line x1="2" y1="5.5"  x2="20" y2="5.5"/>
+          <line x1="2" y1="11"   x2="20" y2="11"/>
+          <line x1="2" y1="16.5" x2="20" y2="16.5"/>
+        </svg>
+      </button>
+
+    </nav>
+  </header>
+
+
+
+  <main id="main-content">
+    <section class="svc-hero">
+      <div class="svc-hero__bg" aria-hidden="true"></div>
+      <div class="svc-hero__overlay" aria-hidden="true"></div>
+      <div class="svc-hero__inner">
+        <p class="section__eyebrow">Online Counselling</p>
+        <h1 class="svc-hero__title">Online counselling you can<br><em>access from anywhere</em></h1>
+        <p class="svc-hero__desc">Attend sessions from home or another private space that works for you.</p>
+      </div>
+    </section>
+
+    <div class="svc-body">
+      <p class="svc-intro">These are reasonable questions. And the honest answer is that online counselling is not for everyone. But for a lot of people, it works just as well as being in the room, and for some people it has its own advantages that make it the better fit.</p>
+      
+        <div class="svc-section">
+          <h2 class="svc-section__title">Why people choose online counselling</h2>
+          <div class="svc-section__body"><p>The most obvious reason is convenience. You do not need to travel, find parking, sit in a waiting room, or rearrange your day around getting to an appointment. You log on from wherever you feel comfortable and you log off when the session is done. For people with busy lives, caring responsibilities, or limited transport, that matters.</p>
+<p>But convenience is not actually the main reason people stick with it. The reason most people continue with online counselling once they have tried it is that they find it easier to talk.</p>
+<p>There is something about being in your own space, your own home, your own chair, that makes it feel safer. You are not walking into an unfamiliar building or sitting in a room you have never been in before. You are somewhere that already feels like yours. For a lot of people, that makes the difference between holding back and actually saying what they need to say.</p></div>
+        </div>
+        <div class="svc-section">
+          <h2 class="svc-section__title">Online counselling can work really well</h2>
+          <div class="svc-section__body"><p>Online counselling is not a compromise or a second-best option. I have worked with clients online and seen meaningful therapeutic relationships built entirely through a screen. That experience shapes how I approach it, not as a workaround, but as a genuine way of working.</p>
+<p>What I can say from experience is that the therapeutic relationship, the trust, the honesty, the feeling of being genuinely heard, does not depend on being in the same room. For many of the people I work with online, the connection is just as real. The work is just as meaningful. The screen is just the delivery.</p></div>
+        </div>
+        <div class="svc-section">
+          <h2 class="svc-section__title">What a session actually looks like</h2>
+          <div class="svc-section__body"><p>An online session at Neil Atkinson Counselling works through a secure video platform. You will receive a link before your session and you click it at the agreed time. You do not need to download anything or create an account.</p>
+<p>From there, it is a conversation. I will be on screen, you will be on screen, and we talk. It is still counselling, just through a screen. The same therapeutic process, the same quality of attention, just delivered differently.</p></div>
+        </div>
+        <div class="svc-section">
+          <h2 class="svc-section__title">A few practical things that help:</h2>
+          <div class="svc-section__body"><p>Find somewhere private where you will not be interrupted. This does not need to be a home office. A bedroom, a parked car, even a quiet corner with headphones can work. The important thing is that you feel able to speak freely.</p>
+<p>Use headphones if you can. It improves the audio quality and it adds an extra layer of privacy if other people are in the house.</p>
+<p>A stable internet connection helps but it does not need to be perfect. The occasional freeze or lag is normal and I will not mind.</p>
+<p>You do not need to look at the camera constantly. Some people find it easier to look slightly away while they talk. That is completely fine. Do whatever helps you think and speak honestly.</p></div>
+        </div>
+        <div class="svc-section">
+          <h2 class="svc-section__title">When online counselling might not be right</h2>
+          <div class="svc-section__body"><p>It is worth being honest about the limitations too. If you do not have a private space at home, online counselling can feel restricted. If you are in a household where someone might walk in or overhear, that changes the dynamic and it might mean face to face or even <a href="walk-and-talk.html">walk and talk therapy</a> is a better fit.</p>
+<p>Some people also simply prefer being in the room with someone. There is nothing wrong with that preference. The best format is the one that helps you open up, and for some people that means being physically present with me.</p>
+<p>I offer <a href="face-to-face.html">face to face sessions</a>, walk and talk therapy, <a href="telephone.html">telephone sessions</a> and online counselling. If you are not sure which would suit you, we can work that out together during your free first conversation.</p></div>
+        </div>
+        <div class="svc-section">
+          <h2 class="svc-section__title">It is more accessible than you might think</h2>
+          <div class="svc-section__body"><p>One thing online counselling does particularly well is remove barriers. If you live somewhere rural, if you have a disability that makes travel difficult, if you work shifts that do not line up with office hours, if you are a parent who cannot easily leave the house, online counselling means you can still access support.</p>
+<p>It also means you are not limited to counsellors in your immediate area. You can work with someone whose approach, experience or specialism is the right fit for you, regardless of where they are based.</p></div>
+        </div>
+        <div class="svc-section">
+          <h2 class="svc-section__title">The first step is the same either way</h2>
+          <div class="svc-section__body"><p>Whether you choose online or in person, the hardest part is the same. It is deciding to reach out. Everything after that is just details.</p>
+<p>If you are thinking about it, book a free consultation with me. You can ask questions, get a feel for whether it is right for you, and there is no obligation to continue. That first conversation can be online too, so you can test the format before committing to anything.</p></div>
+        </div>
+      
+      <div class="svc-related" style="display:block">
+        <p class="svc-related__title">Other ways I work</p>
+        <ul class="svc-related__list" role="list">
+        <li><a href="telephone.html" class="svc-related-link"><span class="svc-related-title">Telephone Counselling</span></a></li>
+        <li><a href="walk-and-talk.html" class="svc-related-link"><span class="svc-related-title">Walk and Talk Therapy</span></a></li>
+        <li><a href="face-to-face.html" class="svc-related-link"><span class="svc-related-title">Face to Face Counselling</span></a></li>
+        </ul>
+      </div>
+      </div>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div>
+        <a href="/" aria-label="Neil Atkinson Counselling — home">
+          <img src="../img/logo.webp" alt="Neil Atkinson Counselling" width="160" height="auto" loading="lazy" style="width:160px;height:auto;margin-bottom:0.8rem;display:block">
+        </a>
+        <p class="footer__tagline">Integrative counselling with Neil Atkinson, MNCPS (Acc.). Face to face, online, telephone and walk and talk across the North East of England.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="What I help with">
+        <p class="footer__col-title">What I help with</p>
+        <ul role="list">
+          <li><a href="../what-i-help-with/anxiety-stress.html">Anxiety and Stress</a></li>
+          <li><a href="../what-i-help-with/depression.html">Depression</a></li>
+          <li><a href="../what-i-help-with/grief-loss.html">Grief and Loss</a></li>
+          <li><a href="../what-i-help-with/trauma.html">Trauma</a></li>
+          <li><a href="../what-i-help-with/mens-mental-health.html">Men&rsquo;s Mental Health</a></li>
+          <li><a href="../what-i-help-with/neurodivergent-support.html">Neurodivergent Support</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="How I work">
+        <p class="footer__col-title">How I work</p>
+        <ul role="list">
+          <li><a href="../how-i-work/face-to-face.html">Face to Face Counselling</a></li>
+          <li><a href="../how-i-work/online-counselling.html">Online Counselling</a></li>
+          <li><a href="../how-i-work/telephone.html">Telephone Counselling</a></li>
+          <li><a href="../how-i-work/walk-and-talk.html">Walk and Talk Therapy</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Information">
+        <p class="footer__col-title">Information</p>
+        <ul role="list">
+          <li><a href="../about.html">About Neil</a></li>
+          <li><a href="../fees.html">Fees</a></li>
+          <li><a href="../index.html#approach">My approach</a></li>
+          <li><a href="../faqs.html">FAQs</a></li>
+          <li><a href="../guides/">Guides</a></li>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../crisis.html">Crisis Support</a></li>
+          <li><a href="../privacy.html">Privacy &amp; Confidentiality</a></li>
+          <li><a href="../privacy.html#cookies">Cookie Policy</a></li>
+          <li><a href="../index.html#booking">Get in touch</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <p class="footer__col-title">Contact</p>
+        <p class="footer__contact-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <a href="mailto:neil@neilatkinsoncounselling.co.uk">neil@neilatkinsoncounselling.co.uk</a>
+        </p>
+        <p class="footer__contact-item">Face to face in Consett, County Durham &middot; Online across the North East</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy"><small>&copy; <span id="current-year">2026</span> Neil Atkinson Counselling. All rights reserved.</small></p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="https://ncps.com/about-us/code-of-ethics/" target="_blank" rel="noopener noreferrer">NCPS Ethical Framework</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../content/blog.js"></script>  <script>
+    (function(){
+      var list = document.getElementById('counsellor-list');
+      if(!list || typeof TEAM === 'undefined') return;
+      var service = list.dataset.service;
+      var matching = TEAM.filter(function(p){
+        return p.specialisms && p.specialisms.indexOf(service) !== -1;
+      });
+      list.innerHTML = matching.map(function(p){
+        return '<li><a href="../about.html" class="svc-counsellor">' + p.name + '</a></li>';
+      }).join('');
+    })();
+  </script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+  </script>
+  <script>
+    (function(){
+      if(typeof POSTS==='undefined') return;
+      var guidesEl = document.getElementById('related-guides-list');
+      var postsEl  = document.getElementById('related-posts-list');
+      if(!guidesEl || !postsEl) return;
+      var slug = guidesEl.dataset.service;
+
+      var matching = POSTS.filter(function(p){
+        return p.relatedServices && p.relatedServices.indexOf(slug) !== -1;
+      });
+
+      var guides = matching.filter(function(p){ return p.category === 'guide'; });
+      var posts  = matching.filter(function(p){ return p.category === 'blog'; });
+
+      function renderList(items, el, section){
+        if(!items.length){ section.style.display='none'; return; }
+        el.innerHTML = items.map(function(p){
+          var folder = (p.category === 'guide') ? '../guides/' : '../blog/';
+          return '<li><a href="' + folder + p.slug + '" class="svc-related-link">'
+            + '<span class="svc-related-title">' + p.title + '</span>'
+            + '</a></li>';
+        

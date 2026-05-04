@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telephone Counselling | Neil Atkinson Counselling</title>
+  <meta name="description" content="Telephone counselling — no camera, no screen, just a conversation. Private, accessible, and effective for many people.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.neilatkinsoncounselling.co.uk/how-i-work/telephone">
+  <meta property="og:title" content="Telephone Counselling | Neil Atkinson Counselling">
+  <meta property="og:description" content="No camera, no screen, just a conversation. Telephone counselling that can work well for many people.">
+  <meta property="og:url" content="https://www.neilatkinsoncounselling.co.uk/how-i-work/telephone">
+  <meta property="og:image" content="https://www.neilatkinsoncounselling.co.uk/img/og-image.jpg">
+  <link rel="preload" href="../css/styles.min.css" as="style">
+  <link rel="stylesheet" href="../css/styles.min.css">  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/favicon-180.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    .svc-hero {
+      min-height: 55vh;
+      display: flex; align-items: center; justify-content: flex-start;
+      text-align: left; position: relative; overflow: hidden;
+      padding: 9rem 4rem 4rem;
+    }
+    .svc-hero__bg {
+      position: absolute; inset: 0;
+      background-image: url('../img/service-telephone.webp');
+      background-size: cover; background-position: center 40%;
+      transform: scale(1.04);
+      animation: svc-zoom 18s ease-out forwards;
+    }
+    @keyframes svc-zoom { from { transform: scale(1.04); } to { transform: scale(1.0); } }
+    .svc-hero__overlay { position: absolute; inset: 0; background: 
+    linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(10,8,4,0.6) 100%),
+    radial-gradient(ellipse at center, rgba(10,8,4,0.55) 0%, rgba(10,8,4,0.3) 40%, transparent 70%); }
+    .svc-hero__inner { position: relative; z-index: 2; max-width: 680px; margin: 0 auto; }
+    .svc-hero .section__eyebrow {
+      color: rgba(255,255,255,0.85); text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+      opacity: 0; animation: svc-fade 0.8s 0.3s ease forwards;
+      justify-content: center; margin-bottom: 1rem;
+    }
+    .svc-hero .section__eyebrow::before,
+    .svc-hero .section__eyebrow::after { background: rgba(201,185,154,0.5); }
+    .svc-hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 300; color: #fff; line-height: 1.1; margin-bottom: 1rem;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.75), 0 4px 32px rgba(0,0,0,0.55);
+      opacity: 0; animation: svc-fade 0.9s 0.6s ease forwards;
+    }
+    .svc-hero__title em { font-style: italic; color: #f5e8cc; }
+    .svc-hero__desc {
+      font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.88);
+      text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+      max-width: 520px; margin: 0 auto; line-height: 1.8;
+      opacity: 0; animation: svc-fade 0.9s 0.9s ease forwards;
+    }
+    @keyframes svc-fade {
+      from { opacity:0; transform: translateY(18px); }
+      to   { opacity:1; transform: translateY(0); }
+    }
+    .svc-body { max-width: 820px; margin: 0 auto; padding: 5rem 2rem; }
+    .svc-intro {
+      font-family: var(--font-display);
+      font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+      font-weight: 300; color: var(--colour-brown); line-height: 1.75;
+      margin-bottom: 3.5rem; padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(158,136,114,0.15);
+    }
+    .svc-section { margin-bottom: 3rem; }
+    .svc-section__title {
+      font-family: var(--font-display); font-size: 1.7rem; font-weight: 500;
+      color: var(--colour-brown); margin-bottom: 1rem; line-height: 1.2;
+    }
+    .svc-section__body { font-size: 1rem; font-weight: 300; color: var(--colour-subtext); line-height: 1.85; }
+    .svc-section__body p { margin-bottom: 1rem; }
+    .svc-section__body p:last-child { margin-bottom: 0; }
+    .svc-section__body ul { margin: 0.8rem 0 1rem 1.4rem; }
+    .svc-section__body li { margin-bottom: 0.4rem; }
+    .svc-counsellors {
+      background: var(--colour-warm-off); border-radius: 1.2rem;
+      padding: 2rem 2.2rem; margin: 3.5rem 0;
+    }
+    .svc-counsellors__title {
+      font-family: var(--font-display); font-size: 1.2rem; font-weight: 500;
+      color: var(--colour-brown); margin-bottom: 1rem;
+    }
+    .svc-counsellors__list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .svc-counsellor {
+      display: inline-block; padding: 0.4rem 1rem;
+      background: #fff; border: 1.5px solid rgba(158,136,114,0.2);
+      border-radius: 3rem; font-size: 0.85rem; color: var(--colour-brown);
+      text-decoration: none; transition: border-color 0.2s, background 0.2s;
+    }
+    .svc-counsellor:hover { border-color: var(--colour-taupe); background: var(--colour-cream); }
+    .svc-cta {
+      background: var(--colour-brown); border-radius: 1.4rem;
+      padding: 3rem 2.5rem; text-align: center;
+      position: relative; overflow: hidden; margin-top: 3rem;
+    }
+    .svc-cta::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: url('../img/nature-band.webp');
+      background-size: cover; opacity: 0.07; pointer-events: none;
+    }
+    .svc-cta__inner { position: relative; z-index: 1; }
+    .svc-cta__title {
+      font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 400; color: var(--colour-cream); margin-bottom: 0.8rem; line-height: 1.2;
+    }
+    .svc-cta__title em { font-style: italic; color: var(--colour-sand); }
+    .svc-cta__desc {
+      font-size: 0.95rem; font-weight: 300; color: rgba(247,244,239,0.85);
+      margin: 0 auto 1.8rem; line-height: 1.7; max-width: 480px;
+    }
+    .svc-cta__btn {
+      display: inline-block; background: var(--colour-cream); color: var(--colour-brown);
+      padding: 0.95rem 2.4rem; border-radius: 3rem; font-size: 0.85rem;
+      font-weight: 500; letter-spacing: 0.06em; text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .svc-cta__btn:hover { background: var(--colour-sand); transform: translateY(-2px); }
+
+    .svc-related { display: none; background: var(--colour-warm-off); border-radius: 1.2rem; padding: 2rem 2.2rem; margin: 3.5rem 0 0; }
+    .svc-related__title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 500; color: var(--colour-brown); margin-bottom: 1rem; }
+    .svc-related__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+    .svc-related-link { display: flex; justify-content: space-between; align-items: center; padding: 0.7rem 1rem; background: #fff; border: 1.5px solid rgba(158,136,114,0.15); border-radius: 0.6rem; text-decoration: none; transition: border-color 0.2s; gap: 1rem; }
+    .svc-related-link:hover { border-color: var(--colour-taupe); }
+    .svc-related-title { font-size: 0.9rem; color: var(--colour-brown); font-weight: 400; }
+    .svc-related-meta { font-size: 0.75rem; color: var(--colour-taupe); white-space: nowrap; flex-shrink: 0; }
+    @media (max-width: 600px) {
+      .svc-body { padding: 3.5rem 1.5rem; }
+      .svc-cta { padding: 2.2rem 1.5rem; }
+    }
+
+    @media (min-width: 1024px) {
+      /* Service page heroes — centre eyebrow + title + desc */
+      .svc-hero { text-align: center; justify-content: center; }
+      .svc-hero__inner { margin: 0 auto; }
+      .svc-hero .section__eyebrow { justify-content: center; }
+      /* Service body — wider */
+      .svc-body { max-width: 1300px; padding: 5rem 4rem 6rem; }
+      .svc-content { max-width: 860px; }
+      .blog-grid { max-width: 900px; }
+      /* Guide/blog post hero — centre title */
+      .post-hero { text-align: center; align-items: flex-end; }
+      .post-hero__inner { margin: 0 auto; max-width: 900px; }
+      /* Guide/blog post body — wider */
+      .post-body { max-width: 1060px; padding: 4rem 5rem 5rem; }
+      /* How-i-work pages */
+      .svc-page { max-width: 1300px; }
+      .svc-sections { max-width: 1060px; }
+      /* Guides index */
+      .guides-listing { max-width: 1400px; }
+      /* Blog index */
+      .blog-listing .blog-grid { max-width: 1300px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+            <header role="banner">
+    <nav class="nav" aria-label="Main navigation">
+
+      <a href="../index.html" class="nav__logo" aria-label="Neil Atkinson Counselling — home">
+        <img src="../img/logo.webp" alt="Neil Atkinson Counselling" class="nav__logo-img" width="622" height="457" fetchpriority="high">
+        <img src="../img/neil-atkinson.webp" alt="Neil Atkinson" class="nav__portrait" width="36" height="36" loading="lazy">
+      </a>
+
+            <span class="nav__sidebar-name">Neil Atkinson</span>
+      <span class="nav__sidebar-role">Integrative Counsellor<br>County Durham &amp; online</span>
+      <ul class="nav__links" role="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="../what-i-help-with/">What I help with</a></li>
+        <li><a href="../how-i-work/">How I work</a></li>
+        <li><a href="../about.html">About Neil</a></li>
+        <li><a href="../fees.html">Fees</a></li>
+        <li><span class="nav__divider" aria-hidden="true"></span></li>
+        <li><a href="../guides/">Guides</a></li>
+        <li><a href="../blog/">Blog</a></li>
+        <li><a href="../crisis.html">Crisis Support</a></li>
+        <li><a href="../faqs.html">FAQs</a></li>
+        <li><a href="../index.html#booking" class="nav__cta">Book a Session</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+             stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <line x1="2" y1="5.5"  x2="20" y2="5.5"/>
+          <line x1="2" y1="11"   x2="20" y2="11"/>
+          <line x1="2" y1="16.5" x2="20" y2="16.5"/>
+        </svg>
+      </button>
+
+    </nav>
+  </header>
+
+
+  <main id="main-content">
+    <section class="svc-hero">
+      <div class="svc-hero__bg" aria-hidden="true"></div>
+      <div class="svc-hero__overlay" aria-hidden="true"></div>
+      <div class="svc-hero__inner">
+        <p class="section__eyebrow">Phone Sessions</p>
+        <h1 class="svc-hero__title">Telephone <em>Counselling</em></h1>
+        <p class="svc-hero__desc">No camera, no screen, just a conversation. Private, accessible, and effective for many.</p>
+      </div>
+    </section>
+
+    <div class="svc-body">
+      <p class="svc-intro">Not everyone wants to be on camera. For some people the idea of a video call feels like one more thing to manage. You start thinking about what you look like, what is behind you, whether your face is doing the right thing. And all of that gets in the way of the thing you are actually there to do, which is talk.</p>
+      
+        <div class="svc-section">
+          <div class="svc-section__body"><p>Telephone counselling takes all of that away. It is just a conversation. No screen, no camera, no worrying about eye contact or lighting or whether your internet connection is going to drop out halfway through a sentence. Just your voice and mine.</p></div>
+        </div>
+        <div class="svc-section">
+          <h2 class="svc-section__title">Why some people prefer the phone</h2>
+          <div class="svc-section__body"><p>There is a reason people have always found it easier to say difficult things on the phone. You are not being watched. You can close your eyes, look out of the window, pace around the room, sit in the dark if that is what helps. The absence of visual pressure gives you space to think and speak more freely.</p><p>This is not just anecdotal. Research into telephone therapy consistently shows that clients report feeling less self conscious and more willing to disclose difficult material compared to <a href="face-to-face.html">face to face</a> or video sessions. For people who find direct eye contact uncomfortable, or who feel exposed on camera, the phone can actually produce more honest and open conversations.</p><p>Some people also find that the slight distance of a phone call makes the content feel more manageable. When you are talking about something painful, not having someone physically in front of you can make it feel less overwhelming. That is not avoidance. It is choosing the format that lets you do the work most effectively.</p></div>
+        </div>
+        <div class="svc-section">
+          <h2 class="svc-section__title">How it works at Neil Atkinson Counselling</h2>
+          <div class="svc-section__body"><p>Telephone sessions work in the same way as any other session. They are 50 minutes, confidential, and follow the same therapeutic process as <a href="face-to-face.html">face to face</a> or online work. I will call you at the agreed time, or you will call me, depending on what we arrange together.</p><p>There is no special setup. You just need your phone and somewhere reasonably private. That might be at home, in your car on a break, or anywhere you feel able to talk without being overheard.</p><p>A few things that help:</p><p>Let anyone in the house know you need to be undisturbed for an hour. You do not need to explain why.</p><p>Headphones or earbuds can help if you are concerned about being overheard and they free up your hands if you are someone who thinks better while moving.</p><p>Have water nearby. An hour of talking is more than most people do in a normal day and your throat will thank you.</p><p>Some people like to sit still. Others walk around the garden or pace their living room. There is no right way to do it. Whatever helps you think clearly is the right approach.</p></div>
+        </div>
+        <div class="svc-section">
+          <h2 class="svc-section__title">When telephone counselling is a good fit</h2>
+          <div class="svc-section__body"><p>Telephone works particularly well for people who are already comfortable talking about their feelings but find the visual element of video distracting or anxiety inducing. It is also a good option if your internet connection is unreliable, if you do not have a device with a camera, or if you simply prefer the simplicity of a phone call.</p><p>It can also work well as a starting point. Some people begin with telephone sessions because it feels like a lower barrier, and then move to video or <a href="face-to-face.html">face to face</a> once they feel more comfortable with the process. Others stay on the phone throughout because it suits them. Both are fine.</p><p>People who travel for work often find telephone counselling the most practical option because it does not depend on being in a specific location with a screen and a stable connection. All you need is your phone and some privacy.</p></div>
+        </div>
+        <div class="svc-section">
+          <h2 class="svc-section__title">When it might not be the best option</h2>
+          <div class="svc-section__body"><p>Telephone counselling relies entirely on voice. I cannot see your facial expressions or body language, and you cannot see mine. For most people this is not a problem and some find it freeing. But if you are someone who relies heavily on visual cues to feel connected, or if you think you would find it harder to trust someone you cannot see, video or <a href="face-to-face.html">face to face</a> may be a better starting point.</p><p>It is also worth being honest with yourself about whether you would find it too easy to disengage on the phone. Some people find that without the visual accountability of a screen or a room, their mind wanders or they hold back. If that sounds like you, a different format might serve you better.</p></div>
+        </div>
+        <div class="svc-section">
+          <h2 class="svc-section__title">You do not need to decide now</h2>
+          <div class="svc-section__body"><p>If you are unsure whether telephone counselling is right for you, that is something you can raise in your free first conversation. I can help you think through what would work best based on your situation, your preferences and what you are hoping to get from the sessions.</p><p>I offer telephone, <a href="online-counselling.html">online video</a>, <a href="face-to-face.html">face to face</a> and <a href="walk-and-talk.html">walk and talk</a> sessions. The format matters less than finding one that lets you be honest. Everything else follows from that.</p></div>
+        </div>
+      
+      <div class="svc-related" style="display:block">
+        <p class="svc-related__title">Other ways I work</p>
+        <ul class="svc-related__list" role="list">
+        <li><a href="online-counselling.html" class="svc-related-link"><span class="svc-related-title">Online Counselling</span></a></li>
+        <li><a href="walk-and-talk.html" class="svc-related-link"><span class="svc-related-title">Walk and Talk Therapy</span></a></li>
+        <li><a href="face-to-face.html" class="svc-related-link"><span class="svc-related-title">Face to Face Counselling</span></a></li>
+        </ul>
+      </div>
+      </div>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div>
+        <a href="/" aria-label="Neil Atkinson Counselling — home">
+          <img src="../img/logo.webp" alt="Neil Atkinson Counselling" width="160" height="auto" loading="lazy" style="width:160px;height:auto;margin-bottom:0.8rem;display:block">
+        </a>
+        <p class="footer__tagline">Integrative counselling with Neil Atkinson, MNCPS (Acc.). Face to face, online, telephone and walk and talk across the North East of England.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="What I help with">
+        <p class="footer__col-title">What I help with</p>
+        <ul role="list">
+          <li><a href="../what-i-help-with/anxiety-stress.html">Anxiety and Stress</a></li>
+          <li><a href="../what-i-help-with/depression.html">Depression</a></li>
+          <li><a href="../what-i-help-with/grief-loss.html">Grief and Loss</a></li>
+          <li><a href="../what-i-help-with/trauma.html">Trauma</a></li>
+          <li><a href="../what-i-help-with/mens-mental-health.html">Men&rsquo;s Mental Health</a></li>
+          <li><a href="../what-i-help-with/neurodivergent-support.html">Neurodivergent Support</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="How I work">
+        <p class="footer__col-title">How I work</p>
+        <ul role="list">
+          <li><a href="../how-i-work/face-to-face.html">Face to Face Counselling</a></li>
+          <li><a href="../how-i-work/online-counselling.html">Online Counselling</a></li>
+          <li><a href="../how-i-work/telephone.html">Telephone Counselling</a></li>
+          <li><a href="../how-i-work/walk-and-talk.html">Walk and Talk Therapy</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Information">
+        <p class="footer__col-title">Information</p>
+        <ul role="list">
+          <li><a href="../about.html">About Neil</a></li>
+          <li><a href="../fees.html">Fees</a></li>
+          <li><a href="../index.html#approach">My approach</a></li>
+          <li><a href="../faqs.html">FAQs</a></li>
+          <li><a href="../guides/">Guides</a></li>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../crisis.html">Crisis Support</a></li>
+          <li><a href="../privacy.html">Privacy &amp; Confidentiality</a></li>
+          <li><a href="../privacy.html#cookies">Cookie Policy</a></li>
+          <li><a href="../index.html#booking">Get in touch</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <p class="footer__col-title">Contact</p>
+        <p class="footer__contact-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <a href="mailto:neil@neilatkinsoncounselling.co.uk">neil@neilatkinsoncounselling.co.uk</a>
+        </p>
+        <p class="footer__contact-item">Face to face in Consett, County Durham &middot; Online across the North East</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy"><small>&copy; <span id="current-year">2026</span> Neil Atkinson Counselling. All rights reserved.</small></p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="https://ncps.com/about-us/code-of-ethics/" target="_blank" rel="noopener noreferrer">NCPS Ethical Framework</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+  <script src="../content/blog.js"></script>  <script>
+    (function(){
+      var list = document.getElementById('counsellor-list');
+      if(!list || typeof TEAM === 'undefined') return;
+      var service = list.dataset.service;
+      var matching = TEAM.filter(function(p){
+        return p.specialisms && p.specialisms.indexOf(service) !== -1;
+      });
+      list.innerHTML = matching.map(function(p){
+        return '<li><a href="../about.html" class="svc-counsellor">' + p.name + '</a></li>';
+      }).join('');
+    })();
+  </script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+  </script>
+  <script>
+    (function(){
+      if(typeof POSTS==='undefined') return;
+      var guidesEl = document.getElementById('related-guides-list');
+      var postsEl  = document.getElementById('related-posts-list');
+      if(!guidesEl || !postsEl) return;
+      var slug = guidesEl.dataset.service;
+
+      var matching = POSTS.filter(function(p){
+        return p.relatedServices && p.relatedServices.indexOf(slug) !== -1;
+      });
+
+      var guides = matching.filter(function(p){ return p.category === 'guide'; });
+      var posts  = matching.filter(function(p){ return p.category === 'blog'; });
+
+      function renderList(items, el, section){
+        if(!items.length){ section.style.display='none'; return; }
+        el.innerHTML = items.map(function(p){
+          var folder = (p.category === 'guide') ? '../guides/' : '../blog/';
+          return '<li><a href="' + folder + p.slug + '" class="svc-related-link">'
+            + '<span class="svc-related-title">' + p.title + '</span>'
+            + '</a></li>';
+        

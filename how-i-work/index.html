@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Work | Neil Atkinson Counselling</title>
+  <meta name="description" content="Face-to-Face counselling, online counselling, walk and talk, and telephone sessions in North East England. Find the format that works best for you.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.neilatkinsoncounselling.co.uk/how-i-work/">
+  <meta property="og:title" content="How We Work | Neil Atkinson Counselling">
+  <meta property="og:description" content="Face-to-Face counselling, online counselling, walk and talk, and telephone sessions. Find the format that works best for you.">
+  <meta property="og:url" content="https://www.neilatkinsoncounselling.co.uk/how-i-work/">
+  <meta property="og:image" content="https://www.neilatkinsoncounselling.co.uk/img/og-image.jpg">
+  <link rel="preload" href="../css/styles.min.css" as="style">
+  <link rel="stylesheet" href="../css/styles.min.css">  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/favicon-180.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    .svc-index-hero {
+      min-height: 55vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      padding: 10rem 2rem 4rem;
+    }
+    .svc-index-hero__bg {
+      position: absolute; inset: 0;
+      background-image: url('../img/hero-bg.webp');
+      background-size: cover;
+      background-position: center 40%;
+      transform: scale(1.04);
+      animation: svc-index-zoom 18s ease-out forwards;
+    }
+    @keyframes svc-index-zoom {
+      from { transform: scale(1.04); } to { transform: scale(1.0); }
+    }
+    .svc-index-hero__overlay {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(10,8,4,0.6) 100%),
+        radial-gradient(ellipse at center, rgba(10,8,4,0.55) 0%, rgba(10,8,4,0.3) 40%, transparent 70%);
+    }
+    .svc-index-hero__inner {
+      position: relative; z-index: 2;
+      max-width: 680px; margin: 0 auto;
+    }
+    .svc-index-hero__eyebrow {
+      display: flex; align-items: center; justify-content: center; gap: 0.7rem; width: 100%;
+      font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: rgba(255,255,255,0.85); margin-bottom: 1.2rem;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+      opacity: 0;
+      animation: svc-index-fade 0.8s 0.3s ease forwards;
+    }
+    .svc-index-hero__eyebrow::before,
+    .svc-index-hero__eyebrow::after {
+      content: ''; display: block; width: 2rem; height: 1px;
+      background: rgba(201,185,154,0.5);
+    }
+    .svc-index-hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 300; color: #fff;
+      line-height: 1.08; margin-bottom: 1rem;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.75), 0 4px 32px rgba(0,0,0,0.55);
+      opacity: 0;
+      animation: svc-index-fade 0.9s 0.6s ease forwards;
+    }
+    .svc-index-hero__title em { font-style: italic; color: #f5e8cc; }
+    .svc-index-hero__desc {
+      font-size: 1rem; font-weight: 300;
+      color: rgba(255,255,255,0.88);
+      text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+      max-width: 500px; margin: 0 auto; line-height: 1.8;
+      opacity: 0;
+      animation: svc-index-fade 0.9s 1s ease forwards;
+    }
+    @keyframes svc-index-fade {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (min-width: 1024px) {
+      /* Service page heroes — centre eyebrow + title + desc */
+      .svc-hero { text-align: center; justify-content: center; }
+      .svc-hero__inner { margin: 0 auto; }
+      .svc-hero .section__eyebrow { justify-content: center; }
+      /* Service body — wider */
+      .svc-body { max-width: 1300px; padding: 5rem 4rem 6rem; }
+      .svc-content { max-width: 860px; }
+      .blog-grid { max-width: 900px; }
+      /* Guide/blog post hero — centre title */
+      .post-hero { text-align: center; align-items: flex-end; }
+      .post-hero__inner { margin: 0 auto; max-width: 900px; }
+      /* Guide/blog post body — wider */
+      .post-body { max-width: 1060px; padding: 4rem 5rem 5rem; }
+      /* How-i-work pages */
+      .svc-page { max-width: 1300px; }
+      .svc-sections { max-width: 1060px; }
+      /* Guides index */
+      .guides-listing { max-width: 1400px; }
+      /* Blog index */
+      .blog-listing .blog-grid { max-width: 1300px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header role="banner">
+    <nav class="nav" aria-label="Main navigation">
+
+      <a href="../index.html" class="nav__logo" aria-label="Neil Atkinson Counselling — home">
+        <img src="../img/logo.webp" alt="Neil Atkinson Counselling" class="nav__logo-img" width="622" height="457" fetchpriority="high">
+        <img src="../img/neil-atkinson.webp" alt="Neil Atkinson" class="nav__portrait" width="36" height="36" loading="lazy">
+      </a>
+
+            <span class="nav__sidebar-name">Neil Atkinson</span>
+      <span class="nav__sidebar-role">Integrative Counsellor<br>County Durham &amp; online</span>
+      <ul class="nav__links" role="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="../what-i-help-with/">What I help with</a></li>
+        <li><a href="../how-i-work/">How I work</a></li>
+        <li><a href="../about.html">About Neil</a></li>
+        <li><a href="../fees.html">Fees</a></li>
+        <li><span class="nav__divider" aria-hidden="true"></span></li>
+        <li><a href="../guides/">Guides</a></li>
+        <li><a href="../blog/">Blog</a></li>
+        <li><a href="../crisis.html">Crisis Support</a></li>
+        <li><a href="../faqs.html">FAQs</a></li>
+        <li><a href="../index.html#booking" class="nav__cta">Book a Session</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+             stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <line x1="2" y1="5.5"  x2="20" y2="5.5"/>
+          <line x1="2" y1="11"   x2="20" y2="11"/>
+          <line x1="2" y1="16.5" x2="20" y2="16.5"/>
+        </svg>
+      </button>
+
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="svc-index-hero" aria-labelledby="how-i-work-heading">
+      <div class="svc-index-hero__bg" aria-hidden="true"></div>
+      <div class="svc-index-hero__overlay" aria-hidden="true"></div>
+      <div class="svc-index-hero__inner">
+        <p class="svc-index-hero__eyebrow">Session formats</p>
+        <h1 class="svc-index-hero__title" id="how-i-work-heading">How I <em>work</em></h1>
+        <p class="svc-index-hero__desc">Counselling should fit around your life, not the other way around. Choose the format that feels right, or ask and I can help you decide.</p>
+      </div>
+    </section>
+    <section class="section" style="padding-top:4rem;" aria-label="Session formats">
+      <ul class="services-grid" role="list">
+        <li class="service-card reveal" data-accent="sage">
+          <a href="face-to-face.html" class="service-card__cover-link" aria-label="Find out more - Face-to-Face Counselling"></a>
+          <div class="service-card__photo"><img src="../img/service-individual.webp" alt="A warm cosy armchair by a sunlit window" loading="lazy"></div>
+          <div class="service-card__top"><div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/></svg></div></div>
+          <h3 class="service-card__title">Face-to-Face Counselling</h3>
+          <p class="service-card__hook">"I just need someone to talk to."</p>
+          <p class="service-card__desc">A private, one-to-one space that belongs entirely to you. In person in Consett, County Durham.</p>
+          <span class="service-card__link" aria-hidden="true">Find out more <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span>
+        </li>
+        <li class="service-card reveal" data-accent="slate">
+          <a href="online-counselling.html" class="service-card__cover-link" aria-label="Find out more - Online Counselling"></a>
+          <div class="service-card__photo"><img src="../img/service-online.webp" alt="A person on a warm video call at home" loading="lazy"></div>
+          <div class="service-card__top"><div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/></svg></div></div>
+          <h3 class="service-card__title">Online Counselling</h3>
+          <p class="service-card__hook">"Leaving the house feels impossible right now."</p>
+          <p class="service-card__desc">Everything you would get in person, from wherever feels safe. Secure video or phone sessions.</p>
+          <span class="service-card__link" aria-hidden="true">Find out more <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span>
+        </li>
+        <li class="service-card reveal" data-accent="forest">
+          <a href="walk-and-talk.html" class="service-card__cover-link" aria-label="Find out more - Walk and Talk"></a>
+          <div class="service-card__photo"><img src="../img/service-walk-and-talk.webp" alt="Two people walking side by side along a misty forest path" loading="lazy"></div>
+          <div class="service-card__top"><div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/></svg></div></div>
+          <h3 class="service-card__title">Walk and Talk</h3>
+          <p class="service-card__hook">"I think more clearly when I'm moving."</p>
+          <p class="service-card__desc">Counselling outdoors, side by side, in nature. Sometimes easier to open up when you're not sitting face to face.</p>
+          <span class="service-card__link" aria-hidden="true">Find out more <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span>
+        </li>
+        <li class="service-card reveal" data-accent="rose">
+          <a href="telephone.html" class="service-card__cover-link" aria-label="Find out more - Telephone"></a>
+          <div class="service-card__photo"><img src="../img/service-telephone.webp" alt="A woman talking comfortably on the phone at home" loading="lazy"></div>
+          <div class="service-card__top"><div class="service-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/></svg></div></div>
+          <h3 class="service-card__title">Telephone</h3>
+          <p class="service-card__hook">"I'd rather not be on camera."</p>
+          <p class="service-card__desc">No video, no screen — just a conversation. Private, accessible, and just as effective.</p>
+          <span class="service-card__link" aria-hidden="true">Find out more <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 4l4 3-4 3"/></svg></span>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div>
+        <a href="/" aria-label="Neil Atkinson Counselling — home">
+          <img src="../img/logo.webp" alt="Neil Atkinson Counselling" width="160" height="auto" loading="lazy" style="width:160px;height:auto;margin-bottom:0.8rem;display:block">
+        </a>
+        <p class="footer__tagline">Integrative counselling with Neil Atkinson, MNCPS (Acc.). Face to face, online, telephone and walk and talk across the North East of England.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="What I help with">
+        <p class="footer__col-title">What I help with</p>
+        <ul role="list">
+          <li><a href="../what-i-help-with/anxiety-stress.html">Anxiety and Stress</a></li>
+          <li><a href="../what-i-help-with/depression.html">Depression</a></li>
+          <li><a href="../what-i-help-with/grief-loss.html">Grief and Loss</a></li>
+          <li><a href="../what-i-help-with/trauma.html">Trauma</a></li>
+          <li><a href="../what-i-help-with/mens-mental-health.html">Men&rsquo;s Mental Health</a></li>
+          <li><a href="../what-i-help-with/neurodivergent-support.html">Neurodivergent Support</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="How I work">
+        <p class="footer__col-title">How I work</p>
+        <ul role="list">
+          <li><a href="../how-i-work/face-to-face.html">Face to Face Counselling</a></li>
+          <li><a href="../how-i-work/online-counselling.html">Online Counselling</a></li>
+          <li><a href="../how-i-work/telephone.html">Telephone Counselling</a></li>
+          <li><a href="../how-i-work/walk-and-talk.html">Walk and Talk Therapy</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Information">
+        <p class="footer__col-title">Information</p>
+        <ul role="list">
+          <li><a href="../about.html">About Neil</a></li>
+          <li><a href="../fees.html">Fees</a></li>
+          <li><a href="../index.html#approach">My approach</a></li>
+          <li><a href="../faqs.html">FAQs</a></li>
+          <li><a href="../guides/">Guides</a></li>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../crisis.html">Crisis Support</a></li>
+          <li><a href="../privacy.html">Privacy &amp; Confidentiality</a></li>
+          <li><a href="../privacy.html#cookies">Cookie Policy</a></li>
+          <li><a href="../index.html#booking">Get in touch</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <p class="footer__col-title">Contact</p>
+        <p class="footer__contact-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <a href="mailto:neil@neilatkinsoncounselling.co.uk">neil@neilatkinsoncounselling.co.uk</a>
+        </p>
+        <p class="footer__contact-item">Face to face in Consett, County Durham &middot; Online across the North East</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy"><small>&copy; <span id="current-year">2026</span> Neil Atkinson Counselling. All rights reserved.</small></p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="https://ncps.com/about-us/code-of-ethics/" target="_blank" rel="noopener noreferrer">NCPS Ethical Framework</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+  <script src="../js/accessibility.js"></script>
+  <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
