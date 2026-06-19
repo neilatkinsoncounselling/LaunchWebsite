@@ -81,9 +81,9 @@ const ABOUT = {
   /* ── CTA ─────────────────────────────────────────────────────────────────── */
   cta: {
     title: 'Ready to take the first <em>step</em>?',
-    body:  'A free consultation costs nothing and commits you to nothing. It is simply a conversation — a chance to see if working together feels right.',
-    primaryText: 'Book your first free session',
-    primaryHref: 'index.html#booking',
+    body:  'A First Free Conversation costs nothing and commits you to nothing. It is simply a conversation — a chance to see if working together feels right.',
+    primaryText: 'Book your First Free Conversation',
+    primaryHref: '/contact',
     secondaryText: 'About Neil',
     secondaryHref: 'about.html',
   },

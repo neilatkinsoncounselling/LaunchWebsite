@@ -8,14 +8,14 @@ const faqs = [
       },
       {
         q: "I'm not sure counselling is right for me. Does that matter?",
-        a: "Not at all. Uncertainty is one of the most common reasons people get in touch. You don't need to be convinced it will work before you try it. The free first session is exactly for this. It gives you a chance to ask questions, get a feel for how I work, and decide whether it feels worth continuing. There's no commitment attached to it."
+        a: "Not at all. Uncertainty is one of the most common reasons people get in touch. You don't need to be convinced it will work before you try it. The First Free Conversation is exactly for this. It gives you a chance to ask questions, get a feel for how I work, and decide whether it feels worth continuing. There's no commitment attached to it."
       },
       {
         q: "Do I need to know what I want to talk about before I come?",
         a: "No. Some people arrive with a clear sense of what they want to work on. Others just know that something isn't right and can't put their finger on exactly what. Both are fine. Part of what counselling does is help you make sense of what you're carrying, so you don't need to have that worked out in advance."
       },
       {
-        q: "What is the free first session?",
+        q: "What is the First Free Conversation?",
         a: "It's a no-obligation conversation, usually around 50 minutes, where you can talk about what's brought you here and what you're hoping to get from counselling. It gives you a chance to see how I work and whether it feels like a good fit. There's no pressure to continue and no charge if you decide it's not for you."
       },
       {
@@ -79,7 +79,7 @@ const faqs = [
     questions: [
       {
         q: "How much does a session cost?",
-        a: "My current session fee is listed on the About page and the booking form. The free first session has no charge attached."
+        a: "My current session fee is listed on the About page and the booking form. The First Free Conversation has no charge attached."
       },
       {
         q: "Do you offer reduced rates?",
