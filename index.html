@@ -7,9 +7,9 @@
   <!-- ─── Primary Meta ───────────────────────────────────────────────── -->
   <title>Neil Atkinson Counselling | Counsellor in Consett, County Durham & Online</title>
   <meta name="description"
-        content="Compassionate counselling in North East England and online. Integrative counsellor offering face-to-face counselling in Consett, County Durham and online across the North East. MNCPS (Acc.).">
+        content="Counselling in Consett, County Durham and online. Feeling anxious, low, overwhelmed or simply not yourself? Face to face, online, telephone or walk and talk. Integrative counselling for adults aged 18 and over. MNCPS (Acc.).">
   <meta name="keywords"
-        content="counselling, therapy, counsellor, north east england, anxiety, grief, couples counselling, family therapy, online therapy, NCPS">
+        content="counselling, therapy, counsellor, north east england, anxiety, grief, trauma, men's mental health, neurodivergent support, online therapy, NCPS">
   <meta name="author" content="Neil Atkinson Counselling">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.neilatkinsoncounselling.co.uk/">
@@ -19,7 +19,7 @@
   <meta property="og:url"         content="https://www.neilatkinsoncounselling.co.uk/">
   <meta property="og:site_name"   content="Neil Atkinson Counselling">
   <meta property="og:title" content="Neil Atkinson Counselling">
-  <meta property="og:description" content="Counselling in Consett, County Durham and online for anxiety, low mood, grief, trauma and life changes. Offering a calm, grounded space to talk.">
+  <meta property="og:description" content="Feeling anxious, low, overwhelmed or simply not yourself? Face to face, online, telephone or walk and talk. Start in the way that feels most manageable.">
   <meta property="og:image" content="https://www.neilatkinsoncounselling.co.uk/img/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -35,10 +35,10 @@
   <meta name="twitter:image"       content="https://www.neilatkinsoncounselling.co.uk/img/og-image.jpg">
   <meta name="twitter:image:alt"   content="Neil Atkinson Counselling logo and tagline">
 
-  <!-- ─── Favicons ───────────────────────────────────────────────────── -->  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
-  <link rel="apple-touch-icon" href="/favicon-180.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <!-- ─── Favicons ───────────────────────────────────────────────────── -->  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="favicon-180.png">
+  <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color"     content="#5c4a3a">
 
   <!-- ─── Structured Data (JSON-LD) ──────────────────────────────────── -->
@@ -47,8 +47,6 @@
   <!-- ─── Preloads (critical resources) ─────────────────────────────── -->
   <link rel="preload" href="css/styles.min.css" as="style">
   <link rel="stylesheet" href="css/styles.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="img/hero-bg-mobile.webp" as="image" fetchpriority="high">
 
   <!-- ─── Stylesheet ─────────────────────────────────────────────────── -->
@@ -60,7 +58,7 @@
   "@type": "LocalBusiness",
   "@id": "https://www.neilatkinsoncounselling.co.uk/#business",
   "name": "Neil Atkinson Counselling",
-  "description": "Integrative counsellor offering individual counselling in Consett, County Durham and online across the North East of England. MNCPS (Acc.).",
+  "description": "Integrative counsellor offering individual counselling for adults in Consett, County Durham and online across the North East of England. MNCPS (Acc.).",
   "url": "https://www.neilatkinsoncounselling.co.uk",
   "logo": "https://www.neilatkinsoncounselling.co.uk/img/logo.webp",
   "image": "https://www.neilatkinsoncounselling.co.uk/img/og-image.jpg",
@@ -120,6 +118,23 @@
     .neil-intro__link:hover{opacity:0.7}
     @media(max-width:600px){.neil-intro{flex-direction:column;gap:1.5rem;padding:1.5rem}.neil-intro__photo{width:90px;height:120px}.section--neil-intro{padding:2rem 1.5rem 0}}
 
+    /* Simplified home page */
+    .home-simple-section { padding: 4.5rem 2rem; }
+    .home-simple-section--soft { background: var(--colour-warm-off); }
+    .home-simple-inner { max-width: 1060px; margin: 0 auto; }
+    .home-simple-copy { max-width: 780px; margin: 0 auto; text-align: center; }
+    .home-simple-copy p { font-size: 0.98rem; line-height: 1.85; color: var(--colour-subtext); font-weight: 300; }
+    .home-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 2.2rem; }
+    .home-card { background: rgba(255,255,255,0.74); border: 1px solid rgba(158,136,114,0.22); border-radius: 1.1rem; padding: 1.7rem; box-shadow: 0 14px 38px rgba(92,74,58,0.08); }
+    .home-card h3 { font-family: var(--font-display); font-weight: 300; font-size: 1.45rem; color: var(--colour-brown); margin-bottom: 0.8rem; }
+    .home-card p { font-size: 0.9rem; line-height: 1.75; color: var(--colour-subtext); font-weight: 300; margin-bottom: 1.1rem; }
+    .home-card a { color: var(--colour-brown); text-decoration: none; font-weight: 500; font-size: 0.85rem; }
+    .home-closing { max-width: 760px; margin: 0 auto; text-align: center; background: var(--colour-cream); border-radius: 1.2rem; padding: 2.5rem; border: 1px solid rgba(158,136,114,0.22); box-shadow: 0 18px 52px rgba(92,74,58,0.09); }
+    .home-closing .section__title { margin-bottom: 1rem; }
+    .home-closing p { color: var(--colour-subtext); font-weight: 300; line-height: 1.85; margin-bottom: 1.4rem; }
+    @media (max-width: 860px) { .home-card-grid { grid-template-columns: 1fr; } .home-simple-section { padding: 3.5rem 1.4rem; } }
+
+
     @media (min-width: 1024px) {
       /* Service page heroes — centre eyebrow + title + desc */
       .svc-hero { text-align: center; justify-content: center; }
@@ -156,7 +171,7 @@
   <header role="banner">
     <nav class="nav" aria-label="Main navigation">
 
-      <a href="/" class="nav__logo" aria-label="Neil Atkinson Counselling — home">
+      <a href="index.html" class="nav__logo" aria-label="Neil Atkinson Counselling — home">
         <img src="img/logo.webp" alt="Neil Atkinson Counselling" class="nav__logo-img" width="622" height="457" fetchpriority="high">
         <img src="img/neil-atkinson.webp" alt="Neil Atkinson" class="nav__portrait" width="36" height="36" loading="lazy">
       </a>
@@ -164,17 +179,17 @@
             <span class="nav__sidebar-name">Neil Atkinson</span>
       <span class="nav__sidebar-role">Integrative Counsellor<br>County Durham &amp; online</span>
       <ul class="nav__links" role="list">
-        <li><a href="/">Home</a></li>
-        <li><a href="what-i-help-with/">What I help with</a></li>
-        <li><a href="how-i-work/">How I work</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="what-i-help-with/index.html">What I help with</a></li>
+        <li><a href="how-i-work/index.html">How I work</a></li>
         <li><a href="about.html">About Neil</a></li>
         <li><a href="fees.html">Fees</a></li>
         <li><span class="nav__divider" aria-hidden="true"></span></li>
-        <li><a href="guides/">Guides</a></li>
-        <li><a href="blog/">Blog</a></li>
+        <li><a href="guides/index.html">Guides</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
         <li><a href="crisis.html">Crisis Support</a></li>
         <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="index.html#booking" class="nav__cta">Book a Session</a></li>
+        <li><a href="contact.html#booking" class="nav__cta">First Free Conversation</a></li>
       </ul>
 
       <!-- Mobile hamburger -->
@@ -195,10 +210,7 @@
   ════════════════════════════════════════════════════════════════════ -->
   <main id="main-content">
 
-    <!-- ─── Hero ─────────────────────────────────────────────────────── -->
     <section class="hero hero--fullbleed" aria-labelledby="hero-heading">
-
-      <!-- Photo backdrop with Ken Burns zoom -->
       <div class="hero__bg-wrap" aria-hidden="true">
         <img class="hero__bg"
              src="img/hero-bg-mobile.webp"
@@ -215,368 +227,93 @@
         <h1 class="hero__title hero__title--light" id="hero-heading">Counselling in<br>Consett,<br>County Durham<br><em>and online.</em></h1>
         <p class="hero__subtitle hero__subtitle--light">
           Feeling anxious, low, overwhelmed or simply not yourself?<br>
-          Face to face, online, telephone, or walk and talk.<br>
-          Whatever works for you - I can help
+          Face to face, online, telephone or walk and talk.<br>
+          Start in the way that feels most manageable.
         </p>
         <div class="hero__actions hero__actions--centered">
-          <a href="#booking" class="btn btn--hero-primary">Book your first free session</a>
+          <a href="contact.html#booking" class="btn btn--hero-primary">Book your First Free Conversation</a>
+          <a href="about.html" class="btn btn--hero-outline">About me</a>
         </div>
       </div>
 
-      <!-- Scroll indicator -->
       <div class="hero__scroll" aria-hidden="true">
         <span class="hero__scroll-label">Scroll</span>
         <div class="hero__scroll-line"></div>
       </div>
-
     </section>
 
-    <!-- ─── Stats Band ────────────────────────────────────────────────── -->
     <div class="stats-band" role="region" aria-label="Key facts">
       <div class="stats-band__inner">
-
-        <div class="stat">
-          <span class="stat__number">&pound;55</span>
-          <span class="stat__label">Per session</span>
-        </div>
-
-        <div class="stats-band__divider" aria-hidden="true"></div>
-
         <div class="stat">
           <span class="stat__number">MNCPS (Acc.)</span>
           <span class="stat__label">NCPS Accredited Registrant</span>
         </div>
-
         <div class="stats-band__divider" aria-hidden="true"></div>
-
         <div class="stat">
           <span class="stat__number">Confidential and professional</span>
           <span class="stat__label">A calm space to talk</span>
         </div>
-
         <div class="stats-band__divider" aria-hidden="true"></div>
-
         <div class="stat">
           <span class="stat__number">Face to face and online</span>
           <span class="stat__label">Flexible ways to meet</span>
         </div>
-
       </div>
     </div>
 
-
-    <!-- Neil intro -->
-    <section class="section section--neil-intro" aria-label="About Neil">
-      <p class="section__eyebrow" style="text-align:center;justify-content:center;margin-bottom:1.5rem;">Meet Neil</p>
-      <div class="neil-intro">
-        <div class="neil-intro__photo">
-          <img src="img/about-300.webp"
-               srcset="img/about-300.webp 1x, img/about-600.webp 2x"
-               alt="Neil Atkinson, integrative counsellor, Consett, County Durham"
-               width="220" height="293"
-               loading="eager">
-        </div>
-        <div class="neil-intro__body">
-          <p class="neil-intro__eyebrow">Neil Atkinson</p>
-          <p class="neil-intro__role">Integrative Counsellor &middot; MNCPS (Acc.) &middot; NCPS Accredited Registrant</p>
-          <p class="neil-intro__text">I came to counselling through real life rather than a textbook. My approach is warm, thoughtful and grounded. I work with you rather than applying a fixed method. My aim is to offer a space where you can talk openly, feel understood and begin to make sense of things in your own way.</p>
-          <a href="about.html" class="neil-intro__link">Read more about me and my approach &rarr;</a>
+    <section class="home-simple-section" aria-labelledby="meet-neil-heading">
+      <div class="home-simple-inner">
+        <div class="home-simple-copy reveal">
+          <p class="section__eyebrow" style="justify-content:center;">Meet Neil</p>
+          <h2 class="section__title" id="meet-neil-heading">Neil Atkinson</h2>
+          <p>Integrative Counsellor &middot; MNCPS (Acc.) &middot; NCPS Accredited Registrant</p>
+          <p>I came to counselling through real life rather than a textbook. My approach is warm, thoughtful and grounded. I work with you rather than applying a fixed method.</p>
+          <p>My aim is to offer a space where you can talk openly, feel understood and begin to make sense of things in your own way. I work with adults aged 18 and over.</p>
+          <p style="margin-top:1.4rem;"><a href="about.html" class="btn btn--outline">Read more about me and my approach</a></p>
         </div>
       </div>
     </section>
 
-    <!-- ─── What we work with + How I work ──────────────────────────── -->
-    <section class="section section--services-compact" id="services" aria-labelledby="services-heading">
-
-      <div class="section__header reveal">
-        <p class="section__eyebrow">What I help with</p>
-        <h2 class="section__title" id="services-heading">You do not need to have it all worked out. <em>Let&rsquo;s talk.</em></h2>
-        <p class="section__subtitle">People come to counselling for many different reasons. You might recognise something here, or you might not. Both are completely fine.</p>
-      </div>
-
-      <p class="section__lead">Some of the things people come to me with:</p>
-      <ul class="dot-tags reveal" role="list">
-        <li><a href="what-i-help-with/anxiety-stress.html" class="dot-tag dot-tag--terracotta">
-          <span class="dot-tag__dot"></span>
-          <span class="dot-tag__body">
-            <span class="dot-tag__name">Anxiety &amp; Stress</span>
-            <span class="dot-tag__hook">Racing thoughts, constant dread</span>
-          </span>
-        </a></li>
-        <li><a href="what-i-help-with/depression.html" class="dot-tag dot-tag--olive">
-          <span class="dot-tag__dot"></span>
-          <span class="dot-tag__body">
-            <span class="dot-tag__name">Depression</span>
-            <span class="dot-tag__hook">When everything feels flat and far away</span>
-          </span>
-        </a></li>
-        <li><a href="what-i-help-with/grief-loss.html" class="dot-tag dot-tag--gold">
-          <span class="dot-tag__dot"></span>
-          <span class="dot-tag__body">
-            <span class="dot-tag__name">Grief &amp; Loss</span>
-            <span class="dot-tag__hook">No right way, no timetable</span>
-          </span>
-        </a></li>
-        <li><a href="what-i-help-with/trauma.html" class="dot-tag dot-tag--slate">
-          <span class="dot-tag__dot"></span>
-          <span class="dot-tag__body">
-            <span class="dot-tag__name">Trauma</span>
-            <span class="dot-tag__hook">You don&rsquo;t have to carry it alone</span>
-          </span>
-        </a></li>
-        <li><a href="what-i-help-with/mens-mental-health.html" class="dot-tag dot-tag--rose">
-          <span class="dot-tag__dot"></span>
-          <span class="dot-tag__body">
-            <span class="dot-tag__name">Men&rsquo;s Mental Health</span>
-            <span class="dot-tag__hook">Asking for help is strength, not weakness</span>
-          </span>
-        </a></li>
-        <li><a href="what-i-help-with/neurodivergent-support.html" class="dot-tag dot-tag--umber">
-          <span class="dot-tag__dot"></span>
-          <span class="dot-tag__body">
-            <span class="dot-tag__name">Neurodivergent Support</span>
-            <span class="dot-tag__hook">A space for how your mind works</span>
-          </span>
-        </a></li>
-      </ul>
-
-      <div class="service-pills__cta reveal">
-        <a href="what-i-help-with/" class="btn btn--outline">Browse all areas</a>
-      </div>
-
-      <div class="section__header reveal" style="margin-top:3.5rem;">
-        <p class="section__eyebrow">How I work</p>
-        <h2 class="section__title">Counselling that fits<em> your life</em></h2>
-        <p class="section__subtitle">There is no single right way to start counselling. Choose the format that feels most manageable for you.</p>
-      </div>
-
-      <p class="section__lead">Some of the ways I work:</p>
-      <ul class="dot-tags dot-tags--4 reveal" role="list">
-        <li><a href="how-i-work/face-to-face.html" class="dot-tag dot-tag--terracotta">
-          <span class="dot-tag__dot"></span>
-          <span class="dot-tag__body">
-            <span class="dot-tag__name">Face-to-Face</span>
-            <span class="dot-tag__hook">Two people in a room, talking</span>
-          </span>
-        </a></li>
-        <li><a href="how-i-work/online-counselling.html" class="dot-tag dot-tag--slate">
-          <span class="dot-tag__dot"></span>
-          <span class="dot-tag__body">
-            <span class="dot-tag__name">Online Counselling</span>
-            <span class="dot-tag__hook">From wherever you feel comfortable</span>
-          </span>
-        </a></li>
-        <li><a href="how-i-work/walk-and-talk.html" class="dot-tag dot-tag--olive">
-          <span class="dot-tag__dot"></span>
-          <span class="dot-tag__body">
-            <span class="dot-tag__name">Walk &amp; Talk</span>
-            <span class="dot-tag__hook">Side by side, outdoors. Moving helps.</span>
-          </span>
-        </a></li>
-        <li><a href="how-i-work/telephone.html" class="dot-tag dot-tag--gold">
-          <span class="dot-tag__dot"></span>
-          <span class="dot-tag__body">
-            <span class="dot-tag__name">Telephone</span>
-            <span class="dot-tag__hook">Just your voice. No camera required.</span>
-          </span>
-        </a></li>
-      </ul>
-
-      <div class="service-pills__cta reveal">
-        <a href="how-i-work/" class="btn btn--outline">See how I work</a>
-      </div>
-
-    </section>
-
-    <!-- ─── Approach ─────────────────────────────────────────────────── -->
-    <section class="section section--tinted" id="approach" aria-labelledby="approach-heading">
-      <div class="section__header reveal">
-        <p class="section__eyebrow">Starting counselling</p>
-        <h2 class="section__title" id="approach-heading">How it works, <em>step by step</em></h2>
-      </div>
-
-      <div class="approach__inner">
-
-        <div class="approach__content reveal">
-          <ol class="approach__steps" aria-label="My four-step approach">
-
-            <li class="approach__step">
-              <span class="step__number" aria-hidden="true">One</span>
-              <div>
-                <h3 class="step__title">Read a little and see how it feels</h3>
-                <p class="step__desc">Have a look around the site, read a little about me, and see whether the way I work feels right for you. You do not need to be certain before getting in touch.</p>
-                <p class="step__desc" style="margin-top:0.5rem;"><a href="about.html" style="color:var(--colour-brown);font-weight:400;">Read more about Neil</a></p>
-              </div>
-            </li>
-
-            <li class="approach__step">
-              <span class="step__number" aria-hidden="true">Two</span>
-              <div>
-                <h3 class="step__title">Book your first free session</h3>
-                <p class="step__desc">A no pressure first conversation to talk about what has brought you here, ask questions, and see whether working together feels like a good fit.</p>
-                <p class="step__desc" style="margin-top:0.5rem;"><a href="blog/what-happens-in-a-first-counselling-session.html" style="color:var(--colour-brown);font-weight:400;">Read what actually happens in a first session.</a></p>
-              </div>
-            </li>
-
-            <li class="approach__step">
-              <span class="step__number" aria-hidden="true">Three</span>
-              <div>
-                <h3 class="step__title">Begin at a pace that suits you</h3>
-                <p class="step__desc">If you decide to continue, we can begin regular sessions in person, online, or by phone, with space to work through things at your own pace.</p>
-              </div>
-            </li>
-
-            <li class="approach__step">
-              <span class="step__number" aria-hidden="true">Four</span>
-              <div>
-                <h3 class="step__title">Review and continue thoughtfully</h3>
-                <p class="step__desc">Some people come for a few sessions and others for longer. We can review things as we go so the support stays useful, steady, and right for you.</p>
-              </div>
-            </li>
-
-          </ol>
+    <section class="home-simple-section home-simple-section--soft" aria-labelledby="home-next-steps-heading">
+      <div class="home-simple-inner">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Where to start</p>
+          <h2 class="section__title" id="home-next-steps-heading">You do not need to have it all worked out. <em>Let&rsquo;s talk.</em></h2>
+          <p class="section__subtitle">Choose the section that feels most useful. You can read a little, take your time and start in the way that feels most manageable.</p>
         </div>
 
-        <div class="approach__illustration reveal">
-          <img src="img/approach-sea-sunset.webp"
-               alt="Wooden stepping stones leading out into the sea at sunset"
-               class="approach__nature-img" loading="lazy">
-        </div>
+        <div class="home-card-grid reveal">
+          <article class="home-card">
+            <h3>What I can help with</h3>
+            <p>People come to counselling for many different reasons. You might recognise something here, or you might not. Both are completely fine.</p>
+            <p>Some of the things people come to me with include anxiety, stress, depression, grief and loss, trauma, men&rsquo;s mental health and neurodivergent support.</p>
+            <a href="what-i-help-with/index.html">Browse all areas &rarr;</a>
+          </article>
 
+          <article class="home-card">
+            <h3>How I work</h3>
+            <p>There is no single right way to start counselling. Choose the format that feels most manageable for you.</p>
+            <p>I offer face to face, online, telephone and walk and talk sessions.</p>
+            <a href="how-i-work/index.html">See how I work &rarr;</a>
+          </article>
+
+          <article class="home-card">
+            <h3>First free conversation</h3>
+            <p>A no pressure first conversation to talk about what has brought you here, ask questions and see whether working together feels like a good fit.</p>
+            <p>You can also read what actually happens in a first counselling session before you get in touch.</p>
+            <a href="blog/what-happens-in-a-first-counselling-session.html">Read the first session blog &rarr;</a>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- ─── Testimonials ──────────────────────────────────────────────── -->
-    <!-- ─── Booking ───────────────────────────────────────────────────── -->
-    <section class="section booking" id="booking" aria-labelledby="booking-heading">
-      <div class="booking__inner">
-        <p class="section__eyebrow reveal" style="justify-content:center;">Contact</p>
-        <h2 class="section__title reveal" id="booking-heading">Say <em>hello</em></h2>
-        <p class="booking__desc reveal">
-          Taking that first step can feel like the hardest part.<br>Get in touch and I&rsquo;ll respond within one working day.
-        </p>
-
-
-
-        <form class="booking-form reveal"
-              name="free-consultation"
-              method="POST"
-              action="thankyou.html"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              novalidate
-              aria-label="Free consultation booking form">
-
-          <input type="hidden" name="form-name" value="free-consultation">
-          <input type="hidden" name="_to" id="booking-form-to" value="neil@neilatkinsoncounselling.co.uk">
-          <input type="hidden" name="counsellor" id="booking-form-counsellor" value="Neil Atkinson">
-          <div style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" aria-hidden="true"><label>Leave blank: <input name="bot-field" tabindex="-1" autocomplete="off"></label></div>
-
-          <div class="form-grid">
-
-            <div class="form-field">
-              <label for="fname">Name <span aria-hidden="true">*</span></label>
-              <input type="text"
-                     id="fname"
-                     name="fname"
-                     placeholder="What you prefer to be called"
-                     autocomplete="given-name"
-                     required
-                     aria-required="true">
-            </div>
-
-            <div class="form-field">
-              <label for="lname">Last Name</label>
-              <input type="text"
-                     id="lname"
-                     name="lname"
-                     placeholder="Optional"
-                     autocomplete="family-name">
-            </div>
-
-            <div class="form-field">
-              <label for="email">Email Address <span aria-hidden="true">*</span></label>
-              <input type="email"
-                     id="email"
-                     name="email"
-                     placeholder="your@email.com"
-                     autocomplete="email"
-                     required
-                     aria-required="true">
-            </div>
-
-            <div class="form-field">
-              <label for="phone">Phone Number</label>
-              <input type="tel"
-                     id="phone"
-                     name="phone"
-                     placeholder="Only if you want me to call"
-                     autocomplete="tel">
-            </div>
-
-            <div class="form-field">
-              <label for="service">What brings you here?</label>
-              <select id="service" name="service">
-                <option value="">Select an area…</option>
-                <option value="anxiety">Anxiety and Stress</option>
-                <option value="depression">Depression</option>
-                <option value="grief">Grief and Loss</option>
-                <option value="trauma">Trauma</option>
-                <option value="mens">Men's Mental Health</option>
-                <option value="neurodivergent">Neurodivergent Support</option>
-                <option value="unsure">Not Sure Yet</option>
-              </select>
-            </div>
-
-            <div class="form-field">
-              <label for="format">Preferred Format</label>
-              <select id="format" name="format">
-                <option value="">Select…</option>
-                <option value="inperson">In-person (Consett, County Durham)</option>
-                <option value="video">Online (Video Call)</option>
-                <option value="phone">Telephone</option>
-                <option value="walkandtalk">Walk and Talk</option>
-                <option value="nopref">No Preference</option>
-              </select>
-            </div>
-
-            <div class="form-field form-field--full">
-              <label for="message">Anything you'd like to share?</label>
-              <textarea id="message"
-                        name="message"
-                        placeholder="A brief description of what's bringing you here
-(optional — share only what you're comfortable with)"></textarea>
-            </div>
-
-          </div>
-
-          <button type="submit" class="form-submit" id="booking-submit">Send message to Neil</button>
-          <p class="form-note">
-            <span aria-hidden="true">🔒</span>
-            All information is treated in strict confidence in accordance with GDPR.
-          </p>
-                  <div class="crisis-banner reveal">
-          <div class="crisis-banner__text">
-            <br><strong>Please Note:</strong><br>I am not a crisis service. If you are struggling to keep yourself safe, free and confidential help is available now.
-          </div>
-          <a href="crisis.html" class="crisis-banner__link">Get urgent support &rarr;</a>
-        </div>
-
-
-        </form>
+    <section class="home-simple-section" aria-labelledby="home-contact-heading">
+      <div class="home-closing reveal">
+        <p class="section__eyebrow" style="justify-content:center;">Contact</p>
+        <h2 class="section__title" id="home-contact-heading">Say <em>hello</em></h2>
+        <p>Taking that first step can feel like the hardest part. Get in touch and I&rsquo;ll respond within one working day. I work with adults aged 18 and over.</p>
+        <a href="contact.html#booking" class="btn btn--primary">Start with a message</a>
       </div>
-    </section>
-
-    <section class="section section--sage" id="testimonials" aria-labelledby="testimonials-heading">
-      <div class="section__header reveal">
-        <p class="section__eyebrow">Client Voices</p>
-        <h2 class="section__title" id="testimonials-heading">What people<br>are <em>saying</em></h2>
-      </div>
-
-      <ul class="testimonials-grid" role="list">
-        <!-- Testimonials are rendered by js/testimonials.js — edit that file to manage testimonials -->
-      </ul>
-      <p style="text-align:center;font-size:0.72rem;font-weight:300;color:var(--colour-taupe);margin-top:2rem;letter-spacing:0.04em;">All testimonials are used with the permission of the client.</p>
     </section>
 
   </main>
@@ -586,10 +323,10 @@
 <footer class="footer" role="contentinfo">
     <div class="footer__inner">
       <div>
-        <a href="/" aria-label="Neil Atkinson Counselling — home">
+        <a href="index.html" aria-label="Neil Atkinson Counselling — home">
           <img src="img/logo.webp" alt="Neil Atkinson Counselling" width="160" height="auto" loading="lazy" style="width:160px;height:auto;margin-bottom:0.8rem;display:block">
         </a>
-        <p class="footer__tagline">Integrative counselling with Neil Atkinson, MNCPS (Acc.). Face to face, online, telephone and walk and talk across the North East of England.</p>
+        <p class="footer__tagline">Integrative counselling with Neil Atkinson, MNCPS (Acc.). Face to face, online, telephone and walk and talk for adults aged 18 and over across the North East of England.</p>
       </div>
 
       <nav class="footer__col" aria-label="What I help with">
@@ -619,14 +356,14 @@
         <ul role="list">
           <li><a href="about.html">About Neil</a></li>
           <li><a href="fees.html">Fees</a></li>
-          <li><a href="index.html#approach">My approach</a></li>
+          <li><a href="how-i-work/index.html">My approach</a></li>
           <li><a href="faqs.html">FAQs</a></li>
-          <li><a href="guides/">Guides</a></li>
-          <li><a href="blog/">Blog</a></li>
+          <li><a href="guides/index.html">Guides</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
           <li><a href="crisis.html">Crisis Support</a></li>
           <li><a href="privacy.html">Privacy &amp; Confidentiality</a></li>
           <li><a href="privacy.html#cookies">Cookie Policy</a></li>
-          <li><a href="index.html#booking">Get in touch</a></li>
+          <li><a href="contact.html">Get in touch</a></li>
         </ul>
       </nav>
 
